@@ -13,6 +13,11 @@
 % 使用 blindtext 宏包自动生成章节文字
 % 这仅仅是用于生成样例文档，正式论文中一般用不到该宏包
 % \usepackage[math]{blindtext}
+\usepackage{graphicx, caption}
+\usepackage[list=true,listformat=simple]{subcaption}
+\newcommand{\tif}{\mathrm}
+\renewcommand{\labelenumi}{\roman{enumi}.}
+\newcommand{\vect}[1]{\boldsymbol{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 设置《国家图书馆封面》的内容，仅博士论文才需要填写
@@ -27,101 +32,103 @@
 % - \clasifiedlevel，表示机密级：此级别的文献内容涉及重要的国家秘密 。
 % - \mostconfidentiallevel，表示绝密级：此级别的文献内容涉及最重要的国家秘密。
 % 此属性可选，默认为\openlevel，即公开级。
-\securitylevel{\controllevel}
+\securitylevel{\openlevel}
 % 设置论文按照《国际十进分类法UDC》的分类编号
 % 该编号可在下述网址查询：http://www.udcc.org/udcsummary/php/index.php?lang=chi
 \udc{004.72}
 % 国家图书馆封面上的论文标题第一行，不可换行。此属性可选，默认值为通过\title设置的标题。
-\nlctitlea{数据中心}
+\nlctitlea{太阳系外行星系统}
 % 国家图书馆封面上的论文标题第二行，不可换行。此属性可选，默认值为空白。
-\nlctitleb{网络模型研究}
+\nlctitleb{从探测到统计刻画}
 % 国家图书馆封面上的论文标题第三行，不可换行。此属性可选，默认值为空白。
 \nlctitlec{}
 % 导师的单位名称及地址
-\supervisorinfo{南京大学计算机科学与技术系~~南京市汉口路22号~~210093}
+\supervisorinfo{南京大学天文与空间科学学院~~南京市仙林大道~163~号~~210089}
 % 答辩委员会主席
-\chairman{张三丰~~教授}
+\chairman{A~~教授}
 % 第一位评阅人
-\reviewera{阳顶天~~教授}
+\reviewera{B~~教授}
 % 第二位评阅人
-\reviewerb{张无忌~~副教授}
+\reviewerb{C~~副教授}
 % 第三位评阅人
-\reviewerc{黄裳~~教授}
+\reviewerc{D~~教授}
 % 第四位评阅人
-\reviewerd{郭靖~~研究员}
+\reviewerd{E~~研究员}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 设置论文的中文封面
 
 % 论文标题，不可换行
-\title{数据中心网络模型研究}
+%\title{}
 % 如果论文标题过长，可以分两行，第一行用\titlea{}定义，第二行用\titleb{}定义，将上面的\title{}注释掉
-% \titlea{半轻衰变$D^+\to \omega(\phi)e^+\nu_e$的研究}
-% \titleb{和弱衰变$J/\psi \to D_s^{(*)-}e^+\nu_e$的寻找}
+\titlea{太阳系外行星系统}
+\titleb{从探测到统计刻画}
 % 论文作者姓名
-\author{韦小宝}
+\author{孟泽洋}
 % 论文作者联系电话
-\telphone{13671413272}
+\telphone{15950459632}
 % 论文作者电子邮件地址
-\email{xiaobao.wei@gmail.com}
+\email{mengzy1989@gmail.com}
 % 论文作者学生证号
-\studentnum{MG0033011}
+\studentnum{DG1326007}
 % 论文作者入学年份（年级）
-\grade{2010}
+\grade{2013}
 % 导师姓名职称
-\supervisor{陈近南~~教授}
+\supervisor{周济林~~教授}
 % 导师的联系电话
-\supervisortelphone{13671607471}
+\supervisortelphone{13512540416}
+\cosupervisor{林潮~~教授}
 % 论文作者的学科与专业方向
-\major{计算机软件与理论}
+\major{天体力学与天体测量}
 % 论文作者的研究方向
-\researchfield{计算机网络与信息安全}
+\researchfield{太阳系外行星的探测与统计}
 % 论文作者所在院系的中文名称
-\department{计算机科学与技术系}
+\department{天文与空间科学学院}
 % 论文作者所在学校或机构的名称。此属性可选，默认值为``南京大学''。
 \institute{南京大学}
 % 论文的提交日期，需设置年、月、日。
-\submitdate{2013年5月10日}
+\submitdate{2017年5月10日}
 % 论文的答辩日期，需设置年、月、日。
-\defenddate{2013年6月1日}
+\defenddate{2017年6月1日}
 % 论文的定稿日期，需设置年、月、日。此属性可选，默认值为最后一次编译时的日期，精确到日。
 %% \date{2013年5月1日}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 设置论文的英文封面
 
 % 论文的英文标题，不可换行
-\englishtitle{A Research on Network Infrastructures for Data Centers}
+\englishtitle{On the Detection and Statistics of Exoplanets}
 % 论文作者姓名的拼音
-\englishauthor{WEI Xiao-Bao}
+\englishauthor{Meng Ze-Yang}
 % 导师姓名职称的英文
-\englishsupervisor{Professor CHEN Jin-Nan}
+\englishsupervisor{Professor Zhou Ji-Lin (NJU)}
+\englishcosupervisor{Professor Douglas Lin (UCSC)}
 % 论文作者学科与专业的英文名
-\englishmajor{Computer Software and Theory}
+\englishmajor{Department of Astronomy and Space Science}
 % 论文作者所在院系的英文名称
-\englishdepartment{Department of Computer Science and Technology}
+\englishdepartment{Department of Astronomy and Space Science}
 % 论文作者所在学校或机构的英文名称。此属性可选，默认值为``Nanjing University''。
 \englishinstitute{Nanjing University}
 % 论文完成日期的英文形式，它将出现在英文封面下方。需设置年、月、日。日期格式使用美国的日期
 % 格式，即``Month day, year''，其中``Month''为月份的英文名全称，首字母大写；``day''为
 % 该月中日期的阿拉伯数字表示；``year''为年份的四位阿拉伯数字表示。此属性可选，默认值为最后
 % 一次编译时的日期。
-\englishdate{May 1, 2013}
+\englishdate{May 1, 2017}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 设置论文的中文摘要
 % 设置中文摘要页面的论文标题及副标题的第一行。
 % 此属性可选，其默认值为使用|\title|命令所设置的论文标题
-% \abstracttitlea{数据中心网络模型研究}
+\abstracttitlea{太阳系外行星系统}
 % 设置中文摘要页面的论文标题及副标题的第二行。
 % 此属性可选，其默认值为空白
-% \abstracttitleb{}
+\abstracttitleb{从探测到统计刻画}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 设置论文的英文摘要
 % 设置英文摘要页面的论文标题及副标题的第一行。
 % 此属性可选，其默认值为使用|\englishtitle|命令所设置的论文标题
-\englishabstracttitlea{A Research on Network Infrastructures}
+\englishabstracttitlea{On the Detection and Statistics of Exoplanets}
 % 设置英文摘要页面的论文标题及副标题的第二行。
 % 此属性可选，其默认值为空白
-\englishabstracttitleb{for Data Centers}
+\englishabstracttitleb{} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -161,6 +168,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 学位论文的正文应以《绪论》作为第一章
 \include{introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{observation_reduction}
+\include{formation_evolution}
+\include{data_statistics}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 学位论文的正文应以《结论》作为最后一章
 \include{conclusion}

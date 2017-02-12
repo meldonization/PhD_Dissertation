@@ -70,9 +70,10 @@
 \RequirePackage{titlesec}
 \RequirePackage{graphicx}
 \DeclareGraphicsExtensions{.pdf,.eps,.jpg,.png}
-\RequirePackage{caption}
+\RequirePackage{caption} %% change from subfig to caption
 \RequirePackage{float}
-\RequirePackage{subfig}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
 \RequirePackage{array}
 \RequirePackage{longtable}
 \RequirePackage{booktabs}
@@ -361,8 +362,8 @@
 \renewcommand*{\thefigure}{\dashnumber{\thechapter}{\arabic{figure}}}
 \renewcommand*{\thetable}{\dashnumber{\thechapter}{\arabic{table}}}
 \renewcommand*{\theequation}{\dashnumber{\thechapter}{\arabic{equation}}}
-\renewcommand*{\thesubfigure}{(\alph{subfigure})}
-\renewcommand*{\thesubtable}{(\alph{subtable})}
+\renewcommand*{\thesubfigure}{\alph{subfigure}}
+\renewcommand*{\thesubtable}{\alph{subtable}}
 \newtheoremstyle{plain}% name
                 {1em}%      Space above, empty = `usual value'
                 {1em}%      Space below
@@ -799,6 +800,8 @@
   \renewcommand{\njut@value@grade}{#1}}
 \newcommand*{\supervisor}[1]{%
   \renewcommand{\njut@value@supervisor}{#1}}
+\newcommand*{\cosupervisor}[1]{%
+  \renewcommand{\njut@value@cosupervisor}{#1}}
 \newcommand*{\supervisortelphone}[1]{%
   \renewcommand{\njut@value@supervisortelphone}{#1}}
 \newcommand*{\major}[1]{%
@@ -821,6 +824,8 @@
   \renewcommand{\njut@value@en@author}{#1}}
 \newcommand{\englishsupervisor}[1]{%
   \renewcommand{\njut@value@en@supervisor}{#1}}
+\newcommand{\englishcosupervisor}[1]{%
+  \renewcommand{\njut@value@en@cosupervisor}{#1}}
 \newcommand{\englishmajor}[1]{%
   \renewcommand{\njut@value@en@major}{#1}}
 \newcommand{\englishdepartment}[1]{%
@@ -897,6 +902,8 @@
       & \njutunderline[310pt]{\njut@value@major}\\
       \makebox[7em][s]{\njut@cap@cover@supervisor}
       & \njutunderline[310pt]{\njut@value@supervisor}\\
+      \makebox[7em][s]{\njut@cap@cover@cosupervisor}
+      & \njutunderline[310pt]{\njut@value@cosupervisor}\\
       \makebox[7em][s]{\njut@cap@cover@researchfield}
       & \njutunderline[310pt]{\njut@value@researchfield}\\
   \end{tabular}
@@ -913,6 +920,8 @@
       & \njutunderline[310pt]{\njut@value@major}\\
       \makebox[7em][s]{\njut@cap@cover@supervisor}
       & \njutunderline[310pt]{\njut@value@supervisor}\\
+      \makebox[7em][s]{\njut@cap@cover@cosupervisor}
+      & \njutunderline[310pt]{\njut@value@cosupervisor}\\
       \makebox[7em][s]{\njut@cap@cover@researchfield}
       & \njutunderline[310pt]{\njut@value@researchfield}\\
   \end{tabular}
@@ -961,12 +970,16 @@
     \bf\sffamily\zihao{2}\njut@value@en@title
     \vskip \stretch{1}
     \normalfont\rmfamily\zihao{4}\njut@cap@cover@en@by
-    \vskip 3pt
+    \vskip 2pt
     \bf\sffamily\zihao{4}\njut@value@en@author
     \vskip\stretch{1}
     \normalfont\rmfamily\zihao{4}\njut@cap@cover@en@supervisor
-    \vskip 3pt
+    \vskip 2pt
     \normalfont\sffamily\zihao{4}\njut@value@en@supervisor
+    \vskip 1pt
+    \normalfont\rmfamily\zihao{4}\njut@cap@cover@en@cosupervisor
+    \vskip 2pt
+    \normalfont\sffamily\zihao{4}\njut@value@en@cosupervisor
     \vskip\stretch{1}
     \normalsize\rmfamily\njut@cap@cover@en@statement
     \vskip\stretch{2}
