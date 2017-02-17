@@ -635,7 +635,6 @@
     \@starttoc{lof}%
     \if@restonecol\twocolumn\fi
 }
-
 \let\jnl@style=\rmfamily 
 \def\ref@jnl#1{{\jnl@style#1}}% 
 \newcommand\aj{\ref@jnl{AJ}}%        % Astronomical Journal 

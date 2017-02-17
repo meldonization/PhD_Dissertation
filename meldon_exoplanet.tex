@@ -13,12 +13,25 @@
 % 使用 blindtext 宏包自动生成章节文字
 % 这仅仅是用于生成样例文档，正式论文中一般用不到该宏包
 % \usepackage[math]{blindtext}
-\usepackage{graphicx, caption}
+\usepackage{graphicx, caption, url, footnote, afterpage, epigraph}
+%\usepackage{tocbibind, tocloft, xpatch}
+\usepackage[figuresright]{rotating}
 \usepackage[list=true,listformat=simple]{subcaption}
 \newcommand{\tif}{\mathrm}
 \renewcommand{\labelenumi}{\roman{enumi}.}
 \newcommand{\vect}[1]{\boldsymbol{#1}}
-
+\renewcommand\labelenumi{\theenumi.}
+\newcommand*{\citen}{}% generate error, if `\citen` is already in use
+\DeclareRobustCommand*{\citen}[1]{%
+  \begingroup
+    \romannumeral-`\x % remove space at the beginning of \setcitestyle
+    \setcitestyle{numbers}%
+    \cite{#1}%
+  \endgroup
+}
+\newcommand{\RN}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 设置《国家图书馆封面》的内容，仅博士论文才需要填写
 
@@ -163,6 +176,9 @@
 % 生成附表清单。如无需附表清单则可注释掉下述语句。
 \listoftables
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\listofequations   ????????????????????????????
+
 % 开始正文部分
 \mainmatter
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -187,6 +203,7 @@
 \bibliography{meldon_exoplanet}
 % 附录，必须放在参考文献后，backmatter前
 \appendix
+\include{appendix}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 书籍附件
 \backmatter
