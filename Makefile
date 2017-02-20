@@ -40,11 +40,11 @@ clean:
 		*.ist \
 		*.log \
 		*.out \
-		*.ps \
+		*.ps  \
 		*.thm \
 		*.toc \
 		*.lof \
 		*.lot \
 		*.loe \
-		*.gz \
-		*.pdf
+		*.gz  \
+		*.equ
