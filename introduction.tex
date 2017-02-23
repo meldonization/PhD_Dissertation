@@ -1,6 +1,7 @@
 \chapter{绪论} \label{chapter:intro}
 
-%\epigraph{... the ways by which men arrive at knowledge of the celestial things are hardly less wonderful than the nature of these things themselves}{\textit{Johannes Kepler}}
+\epigraph{... Onde possiamo stimare che de stelle innumerabili sono altre tante lune, altre tanti globi terrestri, altre tanti mondi simili a questo.}{\textit{Giordano Bruno}}
+
 
 \section{引言}
 \subsection{地球与人类，无独有偶？}
@@ -46,11 +47,11 @@
 
 此外，人们往往会从哲学角度来思考地球与生命在宇宙中普遍与否。比如原子论的宇宙
 描述早已开端于古希腊与古印度。随后，意大利哲学家 Bruno 亦于 1584 年提出无穷宇
-宙论：太阳与地球在宇宙中并不特殊，不计其数的其他星体也和地球相差无几（文献\citen{Bruno1584}）
+宙论：太阳与地球在宇宙中并不特殊，不计其数的其他星体也和地球相差无几（文献\citen{Bruno1584}）。
 
-\begin{quote}
-Onde possiamo stimare che de stelle innumerabili sono altre tante lune, altre tanti globi terrestri, altre tanti mondi simili a questo.
-\end{quote}
+%\begin{quote}
+%Onde possiamo stimare che de stelle innumerabili sono altre tante lune, altre tanti globi terrestri, altre tanti mondi simili a questo.
+%\end{quote}
 
 历史一脉相承至今，随着人们对太阳系内行星与地球的运动探求愈来愈充分，也许便不难
 理解搜索系外行星与系外生命为何如此举足轻重。而且从技术层面上，人类也已经有足够
@@ -127,8 +128,8 @@ $M_\tif{J}$（或行星内部氘元素热核反应的质量下限\cite{Baraffe20
 
 \begin{figure}[hb]
 \centering
-\includegraphics[width=0.95\textwidth]{figures/chapter1/fig3_nasaexo_dischist.jpg}
-\caption{系外行星发现数量趋势图，不同颜色代表不同的探测方法（参照 \S \ref{sec:detmeth}），可以看出该数目呈现指数式增长。（图片取自 NASA Exoplanet Archive）}
+\includegraphics[width=0.95\textwidth]{figures/chapter1/fig3_discoveryear.pdf}
+\caption{系外行星发现数量趋势图，不同颜色代表不同的探测方法（参照 \S \ref{sec:detmeth}），可以看出该数目呈现指数式增长。（图片取自 Open Exoplanet Catalogue）}
 \label{fig:pltdiscyear}
 \end{figure}
 
@@ -290,7 +291,6 @@ TTV\cite{Ford2011TTV,Xie2013} 和星震时变\cite{Silvotti2007,Murphy2016}。�
 
 \section{行星形成理论} \label{sec:pltfrmatntheory}
 
-
 星际空间并不是空无一物的，英国天文学家 William Herchel 在 18 世纪末观测到恒星周围冷暗物质
 吸收带，我们的原太阳就是在这般空间环境中孕育而成\cite{Spitzer1978}。随着原初分子云坍缩，
 核心区域会演化成原恒星，而周围的物质会由于原初角动量守恒而沉降成盘状结构以及双极喷流
@@ -314,17 +314,25 @@ TTV\cite{Ford2011TTV,Xie2013} 和星震时变\cite{Silvotti2007,Murphy2016}。�
 根据文献\citen{Armitage2007}，由于恒星对周围气体的吸积\cite{Pringle1981}、恒星的高能辐射
 \cite{Johnstone1998,Hollenbach1994}，以及气体盘自身的粘滞性
 \cite{Shakura1973,Gammie1996}，角动量会从从气体盘的内侧向外转移，原行星盘也会
-逐渐耗散。如图 \ref{fig:pftimescale} 所示， 2001 年 Haisch 等人通过统计不同星团中的红外超恒星比
-例，发现原行星盘的存活时标在不到百万年（~10 Myr）的量级\cite{Haisch2001}。这对类木行星行形成
+逐渐耗散（图 \ref{fig:discevo}）。2001 年 Haisch 等人则通过统计不同星团中的红外超恒星比
+例\cite{Haisch2001}，发现原行星盘的存活时标在不到百万年（~10 Myr）的量级（见图 \ref{fig:pftimescale}）。这对类木行星行形成
 有着非常重要的限制，因为如今普遍认为木星必须在气体盘消散前吸收足够的气体来长成如今的质量大
-小\cite{WilliamsCieza2011}。
+小\cite{WilliamsCieza2011}。关于星周盘的详细介绍请参考 \S \ref{chapter:form_evo}。
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.95\textwidth]{figures/chapter1/fig10_pftimescale.eps}
+\includegraphics[width=1.0\textwidth]{figures/chapter1/fig10_discevo.eps}
+\caption[原行星盘演化中后期四个主要过程，图片版权 Williams 和 Cieza。]{原行星盘演化中由 (a) 至 (d) 四个主要过程，图片取自文献\citen{WilliamsCieza2011}。 }
+\label{fig:discevo}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/chapter1/fig11_pftimescale.eps}
 \caption[不同星团红外超等效的原（恒）行星盘站所有星团成员的比例。此图可推断星团年龄老于10 Myr 后，恒星周围的气体盘已近乎完全消散。此图版权所有：Hern{\'a}ndez J. 等人。]{不同星团红外超等效的原（恒）行星盘站所有星团成员的比例。此图可推断星团年龄在 5 Myr 左右，恒星周围的气体盘已近乎消散。此图取自文献 \citen{Hernandez2007}。}
 \label{fig:pftimescale}
 \end{figure}
+
 
 \subsection{基于太阳系的经典形成理论} \label{sec:clspftheory}
 
@@ -385,13 +393,12 @@ MMSN 气体盘的面密度拥有如下的幂率函数形式：
 细节构型（尤其是水的来源\cite{Raymond2009}），本文仅能作粗略介绍，图 \ref{fig:pfstage} 为上
 述经典形成模型的核心各阶段过程的总结。
 
-\begin{figure}[t]
+\begin{figure}[h!]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/chapter1/fig11_pfsequence.pdf}
+\includegraphics[width=1.0\textwidth]{figures/chapter1/fig12_pfsequence.pdf}
 \caption[基于太阳系的传统行星形成理论模型在不同阶段的说明图，其中「米级障碍」属于至今为止的重大难题。图片版权 Michael Perryman。]{基于太阳系的传统行星形成理论模型在不同阶段的说明图，其中「米级障碍」属于至今为止的重大难题。此图取自文献 \citen{Perryman2014}。}
 \label{fig:pfstage}
 \end{figure}
-
 
 \subsection{经典理论新挑战：系外行星} \label{sec: exopftheory}
 
@@ -401,9 +408,9 @@ MMSN 气体盘的面密度拥有如下的幂率函数形式：
 照图\ref{fig:exomassper}，本文将系外行星按照其集中区域大致分为三类： 热类木星族
 （椭圆实线），冷类木星族（方框实线）和超级地球族（椭圆虚线）。
 
-\begin{figure}[h]
+\begin{figure}[t]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/chapter1/fig12_nasaexompplot.pdf}
+\includegraphics[width=1.0\textwidth]{figures/chapter1/fig13_nasaexompplot.pdf}
 \caption{现今探测到系外行星的周期 --- 质量散点图。其中不同颜色分别代表不同的探测方法：红色代表视向速度法，灰色是凌星法，绿色指代微引力透镜法黄色代表直接成像法。黑色字母 V，E，J，S，U，N 则分别表示太阳系内金星，地球，木星，土星，天王星和海王星。本文将系外行星进行人为类别划分包络在封闭曲线内，分别为热类木星族（椭圆实线），冷类木星族（方框实线）和超级地球族（椭圆虚线）。此图取自 \url{http://exoplanets.org/}。}
 \label{fig:exomassper}
 \end{figure}
@@ -458,10 +465,17 @@ $\tif{M}_\oplus$ 的固态核心后通过吸积气体而成长\cite{Guillot2005}
 这些行星倾向于聚集在平运动共振（Mean Motion Resonance，简称 MMR）的内边缘，
 尤其是 3:2 和 2:1 平运动共振\cite{Fabrycky2014}。一时之间包括潮汐作用、共振结构
 等解释众说纷纭\cite{LithwickWu2012,Lee2013,Batygin2013,Baruteau2013,Delisle2014,Chatterjee2015}，
-到如今也尚未弄清其中的动力学机制，还有此现象是否依赖于超级地球的形成过程。
+到如今也尚未弄清其中的动力学机制，包括此现象是否依赖于超级地球的形成过程。
 
 \subsubsection{值得一提的行星系统}  \label{sec:pexample}
 %https://en.wikipedia.org/wiki/List_of_exoplanet_firsts
+
+\begin{figure}[b]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/chapter1/fig14_binaryplanet.pdf}
+\caption{已知双星内卫星型（S-type）与行星型（P-type）行星系统中双星和行星轨道半长径分布图，数据来自 \url{http://openexoplanetcatalogue.com}。}
+\label{fig:pibinary}
+\end{figure}
 
 除了以上三大类系外行星系统，本文额外汇总了一些有趣的行星系统（Planet of Interest，POI），
 它们诡怪的轨道构型在某种程度上令人叹为观止，甚至挑战了现有的行星形成理论。
@@ -484,18 +498,20 @@ Ganymede 的构型堪称如出一辙。理论上，此类轨道构型很有可�
 星中的行星系统与单恒星周围相差迥异，这是因为存在伴星的引力干扰，导致行星系统形成过程大相近
 庭。关于此类行星系统，请详见书籍\citen{Haghighipour2010}。
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/chapter1/fig13_binaryplanet.pdf}
-\caption{已知双星内卫星型（S-type）与行星型（P-type）行星系统中双星和行星轨道半长径分布图，数据来自 \url{http://openexoplanetcatalogue.com}。}
-\label{fig:pibinary}
-\end{figure}
-
 \textbf{高偏心率系统} --- \textit{HD 80606}。  {}  作为偏心率最大的几个系统之一，HD 80606 拥有 0.93 
 的轨道偏心率\cite{Naef2001}，远心点居然是近心点距离的近三十倍。同属此类的系统还有 HD 4113
 \cite{Tamuz2008}，HD 80606 行星轨道法向和主星自转轴方向测量（spin-orbit measurement ）
 \cite{Pont2009}表明它们的起源很可能与 Lidov-Kozai 机制\cite{Lidov1962,Kozai1962}有着密切关联
 \cite{Wu2003}。
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/chapter1/fig15_hjmul.pdf}
+\caption{所有拥有热类木星的已确认多行星系统汇总图，点的相对大小正比于行星的质量。数据同样来自 \url{http://openexoplanetcatalogue.com}。}
+\label{fig:hjwcomp}
+\end{figure}
+
 
 \textbf{极短周期行星} --- \textit{Kepler-78 b}。  {}  极短周期行星又称（Ultra Short Period Planets，
 USPs），它们因周期通常在一天以内，和主星表面的距离非常近而得称。代表性行星有 Kepler-78 
@@ -508,13 +524,6 @@ b（周期为 8.5 小时\cite{SanchisOjeda2013}），Kepler-70 b（周期仅 5.8
 \cite{Kennedy2008,Johnson2007b,Jones2014}。观测显示巨星周围的行星普遍距离主星较远
 （$a > 1\,\tif{AU}$），这也许正是主星演化吞噬近距轨道行星的证据\cite{Johnson2007a,Bowler2010}。
 
-\begin{figure}[b]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/chapter1/fig14_hjmul.pdf}
-\caption{所有拥有热类木星的已确认多行星系统汇总图，点的相对大小正比于行星的质量。数据同样来自 \url{http://openexoplanetcatalogue.com}。}
-\label{fig:hjwcomp}
-\end{figure}
-
 \textbf{其他诡怪系统} --- \textit{WASP-47}。 {}  该行星系统拥有一颗典型的热类木星\cite{Hellier2012}，
 然而后续长期检测显示该系统有另外两颗小质量行星\cite{Becker2015,SanchisOjeda2015}以及一颗
 长周期冷类木行星\cite{NeveuVanMalle2016}。这和传统的认为热类木星更倾向于成单的想法截然不同
@@ -524,7 +533,7 @@ b（周期为 8.5 小时\cite{SanchisOjeda2013}），Kepler-70 b（周期仅 5.8
 
 另外对疏散星团以及球状星团的巡天显示，Free-floating Planets（FFPs）也许是潜在的数量
 最多的行星质量天体\cite{Lucas2000,Bihain2009,Sumi2011}，星团环境作为系外（内）行星
-的出生环境\cite{Adams2010,Liu2013} ，也不得不考虑该环境的反馈作用。
+的出生环境\cite{Adams2010,Liu2013} ，也必须考虑该环境对行星形成过程的反馈作用。
 
 
 \section{本文立意}
