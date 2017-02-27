@@ -976,9 +976,9 @@
     \vskip 2pt
     \normalfont\sffamily\zihao{4}\njut@value@en@supervisor
     \vskip 1pt
-    \normalfont\rmfamily\zihao{4}\njut@cap@cover@en@cosupervisor
+    \normalfont\rmfamily\zihao{5}\njut@cap@cover@en@cosupervisor
     \vskip 2pt
-    \normalfont\sffamily\zihao{4}\njut@value@en@cosupervisor
+    \normalfont\sffamily\zihao{5}\njut@value@en@cosupervisor
     \vskip\stretch{1}
     \normalsize\rmfamily\njut@cap@cover@en@statement
     \vskip\stretch{2}

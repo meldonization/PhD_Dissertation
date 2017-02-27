@@ -14,7 +14,7 @@
 % 这仅仅是用于生成样例文档，正式论文中一般用不到该宏包
 % \usepackage[math]{blindtext}
 \usepackage{graphicx, caption, url, footnote, afterpage, epigraph}
-\usepackage{tabularx, multicol}
+\usepackage{tabularx, multicol, amssymb}
 %\usepackage{tocbibind, tocloft, xpatch}
 \usepackage[figuresright]{rotating}
 \usepackage[list=true,listformat=simple]{subcaption}
@@ -32,6 +32,10 @@
 }
 \newcommand{\RN}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+\newcommand*\cleartoleftpage{%
+  \clearpage
+  \ifodd\value{page}\hbox{}\newpage\fi
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 设置《国家图书馆封面》的内容，仅博士论文才需要填写
@@ -51,9 +55,9 @@
 % 该编号可在下述网址查询：http://www.udcc.org/udcsummary/php/index.php?lang=chi
 \udc{004.72}
 % 国家图书馆封面上的论文标题第一行，不可换行。此属性可选，默认值为通过\title设置的标题。
-\nlctitlea{太阳系外行星系统}
+\nlctitlea{巡天时域光变序列分析与}
 % 国家图书馆封面上的论文标题第二行，不可换行。此属性可选，默认值为空白。
-\nlctitleb{从探测到统计刻画}
+\nlctitleb{太阳系外热类木星统计}
 % 国家图书馆封面上的论文标题第三行，不可换行。此属性可选，默认值为空白。
 \nlctitlec{}
 % 导师的单位名称及地址
@@ -75,7 +79,7 @@
 % 论文标题，不可换行
 %\title{}
 % 如果论文标题过长，可以分两行，第一行用\titlea{}定义，第二行用\titleb{}定义，将上面的\title{}注释掉
-\titlea{时域光变序列分析与}
+\titlea{巡天时域光变序列分析与}
 \titleb{太阳系外热类木星统计}
 % 论文作者姓名
 \author{孟泽洋}
@@ -93,7 +97,7 @@
 \supervisortelphone{13512540416}
 \cosupervisor{林潮~~教授}
 % 论文作者的学科与专业方向
-\major{天体力学与天体测量}
+\major{天文学}
 % 论文作者的研究方向
 \researchfield{太阳系外行星的探测与统计}
 % 论文作者所在院系的中文名称
@@ -110,14 +114,14 @@
 % 设置论文的英文封面
 
 % 论文的英文标题，不可换行
-\englishtitle{Light Curve Analysis and Statistics of Hot Jupiters}
+\englishtitle{Light Curve Analysis of Optical Surveys and Statistics of Hot Jupiters}
 % 论文作者姓名的拼音
 \englishauthor{Meng Ze-Yang}
 % 导师姓名职称的英文
 \englishsupervisor{Professor Zhou Ji-Lin (NJU)}
-\englishcosupervisor{Professor Douglas Lin (UCSC)}
+\englishcosupervisor{Professor Douglas Lin (UCSC) \& Alice Quillen (UofR)}
 % 论文作者学科与专业的英文名
-\englishmajor{Department of Astronomy and Space Science}
+\englishmajor{Astronomy}
 % 论文作者所在院系的英文名称
 \englishdepartment{Department of Astronomy and Space Science}
 % 论文作者所在学校或机构的英文名称。此属性可选，默认值为``Nanjing University''。
@@ -131,7 +135,7 @@
 % 设置论文的中文摘要
 % 设置中文摘要页面的论文标题及副标题的第一行。
 % 此属性可选，其默认值为使用|\title|命令所设置的论文标题
-\abstracttitlea{时域光变序列分析与}
+\abstracttitlea{巡天时域光变序列分析与}
 % 设置中文摘要页面的论文标题及副标题的第二行。
 % 此属性可选，其默认值为空白
 \abstracttitleb{太阳系外热类木星统计}
@@ -139,10 +143,10 @@
 % 设置论文的英文摘要
 % 设置英文摘要页面的论文标题及副标题的第一行。
 % 此属性可选，其默认值为使用|\englishtitle|命令所设置的论文标题
-\englishabstracttitlea{Light Curve Analysis and Statistics of Hot Jupiters}
+\englishabstracttitlea{Light Curve Analysis of Optical Surveys and}
 % 设置英文摘要页面的论文标题及副标题的第二行。
 % 此属性可选，其默认值为空白
-\englishabstracttitleb{} 
+\englishabstracttitleb{Statistics of Hot Jupiters} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
