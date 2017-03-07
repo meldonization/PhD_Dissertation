@@ -70,7 +70,7 @@ Santos2004,Fischer2005,Udry2007,Sozzetti2009,Sousa2011}，这也恰好佐证了 
 \end{figure}
 
 
-\subsection{轨道迁移}
+\subsection{轨道迁移} \label{sec:migration}
 
 在传统的行星形成的基础上，行星的轨道迁移并不需要引入额外的行星核心生长以及气体
 吸积机制。轨道迁移代表着轨道半长径 $a$ 发生了变化，在椭圆二体运动中行星的角动
@@ -88,8 +88,8 @@ J = M_\tif{p} n a^2 \label{eq:2bam}
 \subsubsection{气体盘迁移} \label{sec:diskmig}
 
 由于木星质量的行星核心形成后会依然嵌套在恒星周围的气体盘内，因而由于盘的气体和之
-间会存在 AM 交换。这样的的 AM 交换通常是通过处于 Lindblad 共振的气体的 Co-
-rotational 力矩来实现\cite{Binney1987,GoldreichTremaine1979}，比如土星环的结构
+间会存在 AM 交换。这样的的 AM 交换通常是通过处于 Lindblad 共振的气体的 co-rotational 
+力矩来实现\cite{Binney1987,GoldreichTremaine1979}，比如土星环的结构
 \cite{GoldreichTremaine1980}。简单来说第 $m$ 阶共振距离主星半径与行星轨道之间的关系
 为 $r_\tif{L} = (1\pm 1/m)^{2/3} a_\tif{p}$。在二体问题中希尔半径（或洛希半径）可描述为：
 
@@ -212,8 +212,8 @@ Rossiter-McLaughlin 效应（RM 效应）最早可能是被 Holt 于 1893 年预
 因子，$v\sin i$ 为主星的空间投影自转速度。图 \ref{fig:rmsim} 所示为不同的 $b$ 与 
 $\lambda$ 参数下恒星视向速度的理论波动，$\lambda$ 在系外行星领域被称作投影行星
 轨道法向与恒星自转轴夹角（后文统称自转---公转夹角），为观测测量可拟合量。前文
-提到的 $\Psi$ 则为真实的自转--公转夹角，并且本文定义 $0 \leq \Psi < 90^\circ$ 为顺行
-（prograde）轨道，$90^\circ \leq \Psi < 180^\circ $ 则为逆行（retrograde）轨道。
+提到的 $\Psi$ 则为真实的自转--公转夹角，并且本文定义 $0 \leq |\Psi | < 90^\circ$ 为
+顺行（prograde）轨道，$90^\circ \leq |\Psi | < 180^\circ $ 则为逆行（retrograde）轨道。
 
 
 系外行星第一颗被观测到 RM 效应的是 HD209458 系统\cite{Queloz2000}，后来陆续有一
@@ -222,30 +222,254 @@ $\lambda$ 参数下恒星视向速度的理论波动，$\lambda$ 在系外行星
 其演化过程具有非常重要的作用（将被讨论于下文）。
 
 
-\begin{figure}[t]
+\afterpage{
+\begin{figure}[t!]
 \centering
-\includegraphics[height=0.95\textheight]{figures/chapter4/fig6_RMHD189733.pdf}
+\includegraphics[height=0.90\textheight]{figures/chapter4/fig6_RMHD189733.pdf}
 \caption[HD 189733 行星系统凌星内观测到的 RM 效应。上栏为凌星光变曲线，中栏为系统的 RV 曲线周期叠加图，而下栏则为凌星时刻内的 RM 效应，该图版权 Winn 等。]{HD 189733 行星系统凌星内观测到的 RM 效应。上栏为凌星光变曲线，中栏为系统的 RV 曲线周期叠加图，而下栏则为凌星时刻内的 RM 效应，该图取自文献 \citen{Winn2006}。}
-\label{fig:rmhd189733}
+\label{fig:rmhd189733} 
+\end{figure}
+}
+
+
+\section{热木星的自转轨道倾角}   
+
+在已发现的约 370 颗 HJs 系统中，大约有 100 颗拥有 RM 效应的测量
+\footnote{\url{http://www.astro.keele.ac.uk/jkt/tepcat/rossiter.html}}。在 \S \ref{sec:migration} 
+中，我们曾提到 HJs 两种主要形成机制气体盘迁移与高偏心率迁移。而这两种形成过程能够产
+生截然不同的自转---公转夹角分布。对于传统的盘迁移模型，行星的轨道处于盘的平面内，而
+主星的自转轴向量 $\bm{S} $ 被认为和它们的星周盘相互平行，因而 $\Psi$ 角应该比较小。当
+然，在一些特殊情况下 $\Psi$ 也可能被激发，比如：恒星形成后期湍动分子云的内流导致盘平
+面改变\cite{Bate2010}、磁场---星周盘作用\cite{Lai2011}以及伴星的扰动\cite{Lai2014}。在绝大
+部分情况下 $\Psi$ 值应当比较小。相比之下，高偏心率迁移理论（如 Lidov-Kozai 效应）中，
+由于伴星的扰动，类木星的轨道倾角则会与偏心率一共大幅度震荡。这样 $\Psi$ 的期望值则应
+该在 $[0^\circ,\,180^\circ]$ 之间随机分布。
+
+随着越来越多 HJs 的 RM 效应被探测到，这两种理论也看似总算得以被区分开。Winn 等人于 2011 
+年发表了一篇对凌星 HJ 系统 RM 效应统计结果显示：类太阳恒星（GKM Type，$T_\tif{eff} \lesssim 
+6250 $ K）周围测量得到的 $\lambda \sim 0$。与之对应的，在偏热 F 型主星（$T_\tif{eff} \gtrsim 
+6250 $ K） 行星系统中，观测到的 HJs 轨道---自转投影倾角 $\lambda$ 在 0 到 $\pi$ 之间几乎均
+匀分布，甚至还包括一些逆行的轨道（文献 \citen{Winn2010}，另参见图 \ref{fig:hjobliq}）。Albrecht 
+随后便给出解释：由于有效温度较低的恒星拥有最外表的对流层，因而它们的潮汐因子 $Q$ 较小，因
+此能有效的降低 $\Psi$ 角\cite{Albrecht2012}，当然前提便是初始的 $\Psi$ 角随机分布（也因此说明
+HJs 更倾向于通过高偏心率迁移模型形成）。
+
+而对于 Albrecht 等使用的潮汐模型，正如前文（\S \ref{sec:tidal}）所提到的，其中 $Q$ 值的引入是
+一个参数化的模型。这样的模型依赖于类太阳恒星内部对流包层的「混合长」湍动粘滞理论，是通过
+不同星团中双星的圆化时标来估算得出\cite{Zahn1977,Mathieu1994}，因而模型对类太阳的潮汐耗散
+率会由于对流层的存在而被显著增大（中等质量恒星的外表则为辐射包层）。在这样的平衡潮汐模型
+下，假设潮汐鼓包处于平衡态之内，那么 $\Psi$ 以及 $\Omega_\tif{s}$ 将会以相同的速率演化。而潮
+汐演化通常引来行星半长径 $a$ 的演化。对于低质量恒星，其周围的木星公转轨道角速度 $n=2\pi/P 
+> \Omega_\tif{s}$，因此木星将会转移角动量给主星，因而轨道会内迁。在 Albrecht 等人的理论中，
+此轨道内迁速度必须得慢于 $\Psi$ 减小的速度。对于有效温度稍高的主星（$\Omega_\tif{s} > n$），
+它们的角动量会转移给热木星，因此这类 HJs 必须在从距离主星半径（$R_\tif{s}$）更近的位置演化
+\cite{Rogers2013}。
+
+\begin{figure}[t!]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/chapter4/fig7_hjobliq.jpeg}
+\caption[上栏为 HJs 的主星有效温度与投影自转---公转夹角 $\lambda$ 的统计图，下栏为恒星的投影自转速度与有效温度的统计关系。可以看到有效温度较高的恒星明显拥有较大的自转速度，而这部分恒星正好对应几乎均匀分布的 $\lambda$ 值。图片版权 Winn 和 Fabrycky。]{上栏为 HJs 的主星有效温度与投影自转---公转夹角 $\lambda$ 的统计图，下栏为恒星的投影自转速度与有效温度的统计关系。可以看到有效温度较高的恒星明显拥有较大的自转速度，而这部分恒星正好对应几乎均匀分布的 $\lambda$ 值。图片取自文献 \citen{WinnFabrycky2015}}
+\label{fig:hjobliq}
 \end{figure}
 
+为了解决这里的自转公转的共面演化与轨道退化时标问题，一些不同的理论也被相应地被提出，包括：
+\textbf{（1）} Lai 建议将动力学潮汐（dynamical tide）模型将 $\Psi$ 的演化与平衡潮汐的演化区分开
+\cite{Lai2012}，也即除了处于流体静力学的平衡潮汐以外，内引力（internal gravity）与惯性波（inertial 
+wave）同样可以在稍热恒星的内部被激发\cite{Ogilvie2004,Ogilvie2007,Ogilvie2014}。此类机制的潮汐
+响应频率与振幅和热恒星内部的结构以及耗散机制有关\cite{Ogilvie2007}。由于潮汐扰动频率不同，因而
+对应于轨道圆化、轨旋同步以及自转---公转同步演化的等效 $Q$ 值可能会大不相同。甚至在某些 
+$\Omega_\tif{s}/n$ 的特定取值下，$\Psi$ 可在轨道几乎不变的同时衰减为零\cite{Lai2012}，类似的演化
+会将 $\Psi$ 的分布集中在 0，$90^\circ$ 与 $180^\circ$ 三个值附近\cite{Rogers2013,Xue2014}，然而
+观测却没有相关的证据来符合此分布。\textbf{（2）} Dawson 于 2014 年提出类太阳恒星的磁阻尼
+（magnetic breaking）效应\cite{Kraft1967}会使得它们的自转角动量大大减小，因而 HJs 只需要很小部
+分的角动量即可使得恒星的自转与 HJs 公转指向一致。这样 HJs 的轨道半长径不会在 $\Psi$ 被减小至
+零之前就小于恒星的半径（被主星吞噬）\cite{Dawson2014}。
 
-\section{热木星的自转轨道倾角} 
 
-在已发现的 300 颗 HJs 系统中，大约有 
+当然，前文我们提到高偏心率迁移并不是唯一能解决观测到的自转---轨道指向不一致的问题，但是这些
+机制中的 HJs 虽然可以通过盘的迁移达到主星附近几天周期的轨道，但是若想解释两种恒星中 $\Psi$ 值
+的差异还是得需要引入潮汐。在这些理论中，唯一不依赖于潮汐耗散率的解释便是 Rogers 于 2012 年提
+出的理论：温度较高的恒星自转轴会由于内部重力波（internal gravity wave，简称 IGW）而被重新指向。
+由于中等质量的恒星外层为辐射包层，内核则对流的，而 IGWs 则能够在对流辐射层分界面上产生并且向
+外部传播截至于恒星的确表面并改变恒星外层的转动方向\cite{Rogers2012,Rogers2015}。在慢速自转的恒
+星中，此机制可以在观测中产生明显的非零 $\Psi$ 值（即使初始值为零），而同样在低质量类太阳恒星
+中，此机制却不能被激发，因而可以解释观测中的两种恒星的 $\Psi$ 统计分布。
 
-统计样本
-\url{http://www.astro.keele.ac.uk/jkt/tepcat/rossiter.html}
+
+\subsection{统计数据筛选}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/chapter4/fig8_perteff.pdf}
+\caption{已知系外气巨星的轨道周期与主星有效温度分布图，点的大小正比于主星投影自转速度的对数。在此图的左上角分别标注了对应行星周期 $P$ 为 1、3、10 天 处，一个太阳质量恒星的同步自转速度 $V_\tif{s} $（分别为 50.6、16.8、5.0 km/s） 。从图中可以看到大部分类太阳系统拥有 $\Omega_\tif{s} < n$，除了少部分较热恒星周围行星轨道角速度小于恒星自转速度，此图中不同温度的恒星自转速度与行星周期的相关性应该为观测选择效应。}
+\label{fig:perteff}
+\end{figure}
+
+为了检验已有的相关理论，本文利用本章开始所整合的 HJs 数据，并且综合 RM 效应，通过以下条件筛
+选现有数据以提供给后文分析：
+
+\begin{enumerate}
+\item 每个行星系统必须包括行星质量（$M_\tif{p}$）或最小行星质量（$M_\tif{p} \sin i$）、轨道周期
+（$P$）或轨道半长径（$a$）这两类观测量。
+\item 由于超级地球的质量并不足以通过潮汐来改变主星的自转性质，因此我们将样本限制在大于土星质
+量的系外行星。
+\item 该行星系统的宿主恒星必须有较好的质量 $M_\tif{s}$、半径 $R_\tif{s}$、有效温度 $T_\tif{eff}$ 以及
+投影自转速度 $v \sin i$ 的测量。
+\item 每个上述物理量 $\xi$ 需要拥有小于一半的测量误差，即 $\Delta \xi  \leq 0.5 \, \xi$。
+\end{enumerate}
+
+以上挑选后的数据在图 \ref{fig:perteff} 中被分成四种不同的类别：较热恒星（$T_\tif{eff} > 6250 $ K）、
+较冷类太阳恒星（$T_\tif{eff} < 6250 $ K）分别被短周期（$P < 10 $ 天）、长周期（$P >10 $ 天）的
+气巨行星环绕。本文将这四种不同类型的行星数目以及平均恒星自转速度统计在列表 \ref{tbl:stat} 中，
+它们分别为高温度短周期（HS）、高温度长周期（HL）低温度短周期（CS）与低温度长周期（CL）。
+热恒星在长周期上观测到的行星数目明显偏少是由于 RV 观测的选择效应导致的，并且 RV 以及凌星
+都偏向于观测自转偏慢恒星周围的行星。在图中，热恒星自转速度明显要快于冷恒星的自转（$v\sin i$ 
+--- $T_\tif{eff}$）则是因为有低质量恒星的星风磁阻尼效应\cite{Kraft1967}。
+
+{\renewcommand{\arraystretch}{1.3}
+\begin{table}[t]
+\centering
+\caption{按照主星性质分类下，不同行星系统的统计数据}
+\label{tbl:stat}
+\begin{tabularx}{0.9\textwidth}{@{\extracolsep{\fill}}lcc}
+\toprule
+  &  Mean $v \sin i $ [km/s]  & Number of systems \\ \midrule 
+HS & 16.7       & 38                \\ 
+HL & 11.5       & 12                 \\ 
+CS & 4.5        & 129               \\ 
+CL & 2.9        & 196                \\ \bottomrule
+\end{tabularx}
+\end{table}
+}
+
+\subsection{行星公转---恒星自转潮汐演化}
+
+对于热木星系统而言，系统的总角动量主要是由主星的自转角动量与行星轨道角动量组成的（行
+星自己的自转角动量与主星绕质心公转的角动量均小两个量级以上，因此可以忽略）。主星的自
+转角动量为
+
+\begin{equation} \label{eq:spinam}
+J_{*,\,\tif{spin}} \equiv S = \gamma_\tif{s} M_\tif{s} R_\tif{s}^2 \Omega_\tif{s} \ ,
+\end{equation} %\myequation{恒星自转角动量}
+其中 $\gamma_\tif{s}$ 为恒星转动惯量系数。行星的轨道角动量则为 $L = M_\tif{p}na^2$（参见
+公式 \ref{eq:2bam}）。在潮汐力矩的作用下，整个系统的总角动量（$S+L$）守恒，因此可以得
+到恒星的自转角动量变化率与行星公转角动量变化率满足关系式 $\dot{J} = \dot{S}$。
+
+不失一般性，取 $\Psi$ 为恒星自转与行星公转法向任意夹角，行星对主星的平衡潮作用将会使得
+行星的轨道半长径、主星的自转与行星轨道法向角度以及主星的自转速度有如下变化
+
+\begin{subequations} \label{eq:tidalevo}
+\setlength{\jot}{10pt}
+\begin{align}
+   \dot{\Psi} &= - \frac{L\sin \Psi f_\Psi(\Psi)}{2S_{\tau_e}}     \label{eq:obevo} \\
+    \frac{\dot{a}}{a} &= - \frac{f_a(\Psi)}{\tau_e}   \label{eq:smaevo}  \\
+    \frac{\dot{\Omega}}{\Omega} & = \frac{Lf_\Omega(\Psi)}{2S_{\tau_e}} \label{eq:spinevo}
+\end{align}
+\end{subequations} %\myequation{潮汐对行星轨道以及恒星自转的影响}
+其中 $f_\Psi(\Psi) = 1 - (\Omega_\tif{s}/2n)(\cos\Psi - S/L)$，$f_a(\Psi) = 1 - (\Omega_\tif{s}/n)\cos\Psi$，
+$f_\Omega(\Psi) = \cos\Psi - (\Omega_\tif{s}/2n)(1+ \cos^2\Psi)$（文献 \citen{Goldreich1966,
+Eggleton1998,Ogilvie2004}）。典型的潮汐演化时标则为：
+
+\begin{equation} \label{eq:taue}
+\tau_e \equiv \left( {Q_\tif{s} \over 3 k_2} \right) \left( {M_\tif{s} \over M_\tif{p}}\right)
+\left( {a \over R_\tif{s}}\right)^5 \left( {P \over 2 \pi} \right) 
+\end{equation} %\myequation{典型的潮汐演化时标}
+
+在方程 \label{eq:taue} 中，一般会采用 Goldreich 与 Stoer 的潮汐参数记号 $Q_\tif{s}^\prime \equiv 3 
+Q_\tif{s}/2k_2$，其中 $k_2 =1.5/(1+{\tilde \mu})$，且 ${\tilde \mu} = 19 \mu/(2 \rho_\tif{s} 
+g_\tif{s} R_\tif{s})$ 为等效刚性系数, $\mu$，$\rho_\tif{s}$ 和 $g_\tif{s}$ 则分别为主星的刚性系数、
+密度以及表面重力。
+
+对于中等小大的 $\Psi$，可有 $f_\Psi \simeq 1 - (\Omega/2n) (1-S/L)$，$f_a \simeq f_\Omega \simeq 1
+ - \Omega/n$（精确到 $\Psi$ 的二阶），从而有
+ 
+\begin{subequations} \label{eq:ttimescale}
+\setlength{\jot}{10pt}
+\begin{align}
+    \tau_a &\simeq - \frac{L}{2S}\tau_\Omega \simeq \frac{L}{2S} \frac{f_\Psi}{f_a} \tau_\Psi \\
+    \tau_\Psi &\simeq -\frac{f_\Omega}{f_\Omega} \tau_\Omega 
+\end{align}
+\end{subequations} %\myequation{潮汐对行星轨道以及恒星自转的影响}
+其中我们定义 $\tau_a \equiv a /{\dot a}$,  $\tau_\Omega \equiv \Omega / {\dot \Omega}_{\tif{s, t}}$, 
+$\tau_\Psi \equiv \Psi / {\dot \Psi}$ 为典型的行星轨道、恒星自转以及自转---公转夹角演化时标。
+
+在本文内，我们考虑了将不同系统的 $Q_\tif{s}^\prime$ 值，因为该参数依赖于何种湍动粘滞机制\cite{
+Zahn1977,Goldreich1989,Penev2007}、内部结构\cite{Terquem1998,Goodman2009}以及自转速率
+\cite{Ogilvie2007,Barker2009}密切相关。在弱摩擦近似下的平衡潮汐模型下，$Q_\tif{s}^\prime$ 与
+潮汐强迫震动频率无关，因而在处理 $\dot{a}$，$\dot{\Omega}_\tif{s}$，$\dot{\varPsi}$ 时并不需要
+加以区分，因而 $\tau_a / \tau_\Psi$ 也并依赖于$Q_\tif{s}^\prime$ 值的选择。
+
+观测中，大部分围绕低质量低温慢速自转类太阳恒星的 HJs 都满足 $n>\Omega_\tif{s}$，也即它们的
+同步自转半径 $a_\tif{cr} = (GM_\tif{s}/\Omega_\tif{s}^2)^{1/3} = (GM_\tif{s}R_\tif{s}^2/V_\tif{s}^2)^{1/3}$，
+加上符号后，$\tau_a (<0)$，$\tau_\Omega (>0)$ 以及$\tau_\Psi (<0)$ 分别对应于轨道收缩，恒星自
+转加速和轨道自转同向。在这样的极限下 $f_a$, $f_\Omega$ and $f_\Psi$ 均趋近于单位一，与之对应
+的角动量比值 $L/2S$ 可从小于一取值到大于一。
+
+进一步延伸公式 \ref{eq:ttimescale} 后，可以得到对于快速自转的主星（$L<2S$）周围的行星轨道会
+在自转---公转夹角演化前便显著收缩（$\tau_a < \tau_{\Omega},\tau_\tif{s}$）。若要使得这部分在它
+如今的轨道上存活，就必须要求半长径演化的时标 $\tau_a$ 能够大于或者与恒星的年龄相当（$\tau_
+\tif{s}\sim \tau_\odot$ 其中 $\tau_\odot =4.6$ Gyr 为太阳如今的年龄），也即
+
+\begin{equation} \label{eq:qorbit} 
+Q_\tif{s}^\prime > Q_{\rm orbit} \equiv {9 \tau_\tif{s} \over 2} 
+{M_\tif{p} \over M_\tif{s}}  \left( {G M_\tif{s} \over R_\tif{s}^3} \right)^{1/2}
+\left({R_\tif{s} \over a} \right)^{13/2}.
+\end{equation}  %\myequation{行星轨道演化所需求的平衡潮参数}
+其中我们引入 $Q_{\rm orbit}$ 来指示过去行星轨道的平衡潮演化参数。这里我们将前文提到的恒星内部
+的耗散参数 $Q_\tif{s}^\prime $ 全部记成 $Q$ 以示美观。
+
+然而另一方面，对于缓慢自转的恒星（$L>2S$），情况则会有所不同。这部分恒星的自转轴---行星的轨道
+法向夹角 $\Psi$ 会有显著的演化，尽管行星轨道并未发生变化（$\tau_a >\tau_{\Omega},\tau_{\tif{s}}$）。
+对于这部分系统而言，改变主星 $\Omega_\tif{s}$ 或者 $\Psi$ 则仅需要轨道少量变化即可。因而只有满足
+$\tau_\tif{s}>\tau_\Psi \simeq 2S \tau_e/L$ 的系统才能使得恒星自转与自转---轨道夹角有显著的演化（参
+见公式 \ref{eq:tidalevo}），也即对应于
+
+\begin{equation}  \label{eq:qspin}
+Q_\tif{s}^\prime < Q_{\rm spin} \equiv {9 G M_\tif{s} \tau_\tif{s} 
+\over 4 \gamma_\tif{s} R_\tif{s}^2 V_\tif{s}} 
+\left( {M_\tif{p} \over M_\tif{s}} \right)^2 
+\left({R_\tif{s} \over a} \right)^{6}.
+\end{equation} %\myequation{恒星自转演化所需求的平衡潮参数}
+这里的 $Q_{\rm spin} $ 为过去主星自转（以及自转---公转夹角）的平衡潮演化参数，其中公式 \ref{eq:qorbit} 
+与公式 \ref{eq:qspin} 之间满足关系 $Q_{\rm spin} = L/2S Q_{\rm orbit}$。
+
+对于满足 $L< 2S$ 的系统，它们不可能在 HJs 的轨道不显著内缩的同时，对主星的自转速度以及自转轴
+取向造成可观的该变量。相反当 $L>2S$时，我们便可找到对应的 $Q_\tif{s}^\prime $ 来同时满足公式 
+\ref{eq:qorbit} 与公式 \ref{eq:qspin} ，也即 $Q_{\rm orbit} < Q_\tif{s}^\prime < Q_{\rm spin}$。在此范围
+内热木星公转法向与主星自转轴方向可被潮汐趋同化。需要说明的是，这里的条件和真实的恒星 $Q$ 值并
+不相关。
+
+在这两种情况之间，我们可以计算得到自转---公转的临界值，它定义为 $L=2S $时，主星的临界自转速率
+
+\begin{equation} \label{eq:vc}
+V_c \equiv {M_\tif{p} {\sqrt{G M_\tif{s} a}} /( 2 \gamma_\tif{s} m_\tif{s}R_\tif{s}}).
+\end{equation} %\myequation{潮汐演化中恒星自转速度的临界取值}
+
+对于在快速旋转恒星（$\Omega_\tif{s} > n$）周围的行星，若其轨道半长径满足 $a > a_{cr}$，那么它将会
+接受来自恒星的角动量，轨道也将扩张至当前观测的位置附近。而由于在方程 \ref{eq:taue} 中 $\tau_a 
+\propto \tau_e$ 是十分敏感依赖于 $a$ 值的函数，因此公式 \ref{eq:qspin} 能比较好限定当前主星的潮汐参
+数 $Q$ 值。下面我们将对中等质量的恒星以及低质量类太阳恒星分别分析统计的结果。
+
+\subsection{中等质量恒星} \label{sec:hotstar}
 
 
 
-列表几种解释对应的优缺点，比如 PPS 不能解释逆转 HJ，但是不依赖于盘以及伴星等。
 
-\subsection{类太阳恒星}
 
-星风
+\subsection{类太阳恒星} \label{sec:coolstar}
 
-\subsection{中等质量恒星}
+对于有效温度较低的类太阳主星，它们自转的速度明显小于上文提到的高温恒星（见图 \ref{fig:perteff}），
+这是因为此类恒星可通过星风来流失质量与损失原初角动量。这样的效应在观测上则一般引用文献
+\citen{Skumanich1972,Soderblom1983} 中的经验公式来定量描述，具体形式如下
+
+\begin{equation} \label{eq:wind}
+V_\tif{s} \simeq  V_0 \bigg( \frac{t}{t_0} \bigg)^{-1/2}
+\end{equation}
+这里的 $t_0$ 与 $V_0$ 在本文分别取为 $\simeq$1 Gyr 与 $\simeq$ 4 km s$^{-1}$。在星风与潮汐的同时
+作用下\cite{DobbsDixon2004,Dawson2014}，对恒星自转速度影响的总效应则为：$\dot{\Omega}_\tif{s} 
+\simeq \dot{\Omega}_\tif{s, t} + \dot{\Omega}_\tif{s, w}$，其中 $\dot{\Omega}_\tif{s, t}$ 为潮汐带来的自转
+变化率，$\dot{\Omega}_\tif{s, w}$ 则为星风相应的贡献。利用公式 \ref{eq:wind}，我们可以得到 
+$\dot{\Omega}_\tif{s, w} = -\Omega_\tif{s}^3 R_\tif{s}^2/2 t_0 V_0^2$
 
 \subsection{讨论}
 
