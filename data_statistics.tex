@@ -342,7 +342,7 @@ CL & 2.9        & 196                \\ \bottomrule
 \end{table}
 }
 
-\subsection{行星公转---恒星自转潮汐演化}
+\subsection{行星公转---恒星自转潮汐演化} \label{sec:obliquityevo}
 
 对于热木星系统而言，系统的总角动量主要是由主星的自转角动量与行星轨道角动量组成的（行
 星自己的自转角动量与主星绕质心公转的角动量均小两个量级以上，因此可以忽略）。主星的自
@@ -400,7 +400,7 @@ Zahn1977,Goldreich1989,Penev2007}、内部结构\cite{Terquem1998,Goodman2009}�
 加以区分，因而 $\tau_a / \tau_\Psi$ 也并依赖于$Q_\tif{s}^\prime$ 值的选择。
 
 观测中，大部分围绕低质量低温慢速自转类太阳恒星的 HJs 都满足 $n>\Omega_\tif{s}$，也即它们的
-同步自转半径 $a_\tif{cr} = (GM_\tif{s}/\Omega_\tif{s}^2)^{1/3} = (GM_\tif{s}R_\tif{s}^2/V_\tif{s}^2)^{1/3}$，
+公转同步自转半长径 $a_\tif{cr} = (GM_\tif{s}/\Omega_\tif{s}^2)^{1/3} = (GM_\tif{s}R_\tif{s}^2/V_\tif{s}^2)^{1/3}$，
 加上符号后，$\tau_a (<0)$，$\tau_\Omega (>0)$ 以及$\tau_\Psi (<0)$ 分别对应于轨道收缩，恒星自
 转加速和轨道自转同向。在这样的极限下 $f_a$, $f_\Omega$ and $f_\Psi$ 均趋近于单位一，与之对应
 的角动量比值 $L/2S$ 可从小于一取值到大于一。
@@ -446,14 +446,54 @@ V_c \equiv {M_\tif{p} {\sqrt{G M_\tif{s} a}} /( 2 \gamma_\tif{s} m_\tif{s}R_\tif
 \end{equation} %\myequation{潮汐演化中恒星自转速度的临界取值}
 
 对于在快速旋转恒星（$\Omega_\tif{s} > n$）周围的行星，若其轨道半长径满足 $a > a_{cr}$，那么它将会
-接受来自恒星的角动量，轨道也将扩张至当前观测的位置附近。而由于在方程 \ref{eq:taue} 中 $\tau_a 
+接受来自恒星的角动量，轨道也将	扩张至当前观测的位置附近。而由于在方程 \ref{eq:taue} 中 $\tau_a 
 \propto \tau_e$ 是十分敏感依赖于 $a$ 值的函数，因此公式 \ref{eq:qspin} 能比较好限定当前主星的潮汐参
 数 $Q$ 值。下面我们将对中等质量的恒星以及低质量类太阳恒星分别分析统计的结果。
 
 \subsection{中等质量恒星} \label{sec:hotstar}
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/chapter4/fig9a_hot.pdf}
+\caption{所有中等质量恒星周围已知 $\lambda$（$\Psi$） 的 HJs 散点图。图中点的大小代表行星的质量 $M_\tif{p}$，颜色则代表 $\Omega/n$。可以看到自转偏慢的恒星反而拥有比较大的 $\lambda$。而且图中至少有七个系统拥有 $\Omega > n$，这代表了这些系统内行星轨道发生了外迁。}
+\label{fig:hotobliquity}
+\end{figure}
 
 
+\afterpage{
+\begin{figure}[t]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/chapter4/fig9b_hot.pdf}
+\caption{根据公式 \ref{eq:qorbit} 与 \ref{eq:qspin} 计算得到的热恒星对应的临界 $Q_\tif{orbit}$ 与 $Q_\tif{spin}$ 值分布图。 黑色的实心圆与空心圆分别代表自转轨道法向吻合（$\lambda < 30^\circ$）与不吻合（$\lambda > 30^\circ$）的系统，对于 $\Omega_\tif{s} > n$ 的系统则用菱形来表示，灰色的点则表示没有$\lambda$ 的观测数据信息。}
+\label{fig:hotqq}
+\end{figure}
+}
+
+首先我们将如上分析应用至热恒星中，这部分恒星周围不太可能有很强的星风。在图 \ref{fig:hotobliquity} 
+中，我们将此类系统中观测到的 HJs 投影 $\Psi$ 角 $\lambda$ 和主星的有效温度分别画在纵轴与横轴上。
+在平衡潮汐的模型下，红色的系统（$\Omega_\tif{s} < n$）中行星轨道将会收缩，而少数绿色的系统（
+$\Omega_\tif{s} > n$）则会膨胀，且这些快速自转系统的 $\Psi$ 值相对较小。与此同时自转---公转高度不
+吻合的系统（$\Psi$ 值较大）反而和自转偏慢的系统相关。在文献 \citen{Dawson2014} 的描述中，自转偏
+慢的恒星拥有较小的角动量，因此这些主星的自转轴应该会更容易受其行星的潮汐作用影响。从这些系统
+中发现的自转---公转不一致性和自转速度的反相关性和以往普遍认为的慢速自转恒星更容易手潮汐作用的
+影响是不自洽的\cite{Rogers2013,Li2016}。
+
+同样这些系统的  $Q_\tif{orbit}$ 与 $Q_\tif{spin}$ （公式 \ref{eq:qorbit} 和 \ref{eq:qspin}）也被对应地画在
+图 \ref{fig:hotqq} 中：黑色点 --- $\Psi < 30^\circ$，黑色空心点 --- $\Psi > 30^\circ$ 以及灰色点标注的没有
+测量数据的系统。不失一般性，我们采取 $\tau_\tif{s} \sim \tau_\odot = 4 $ Gyr，以及 $\gamma_\tif{s} = 0.2$
+不同恒星这些值可那个会有所差别，但是并不会让它们穿越对角线（$Q_\tif{orbit} = Q_\tif{spin}$）。
+
+如果潮汐能够在这些系统中起作用的同时行星也不会坠入主星内，那么主星的潮汐值参数 $Q_\tif{s}^\prime$
+应该在区间 $Q_\tif{orbit} < Q_\tif{s}^\prime <  Q_\tif{spin}$ 以内。从图中可以明显的看到大部分系统都落在
+了灰色区域 $Q_\tif{orbit} >  Q_\tif{spin}$ 内，因而这些系统不能在不显著缩小轨道的同时，通过潮汐作用改
+变主星的自转取向（参见章节 \S \ref{sec:obliquityevo}）。
+
+也有小部分系统处在 $L> 2S$ 的边界处，这样的系统都是快速自转的系统（$\Omega_\tif{s} > n$，菱形的数
+据点）。对于这些系统，行星的轨道处于共转半长径以内，过去的潮汐作用只会导致该系统 $L/2S$ 的值增加。
+而 $Q$ 也会随着时间的增长而增加（即过去恒星的 $Q$ 值更小），因此过去这些系统的潮汐作用会更强。而
+从它们的 $\Psi$ 偏大表示过去更强潮汐作用并没有在它们之中起主导作用。甚至有些系统的潮汐演化时标已经
+明显长于主星的年龄（在图 \ref{fig:hotqq} 中 $Q \gtrsim 10^{6-8}$），这也进一步支持了行星与恒星之间的潮
+汐作用可能比双星之间的作用弱得多\cite{Ogilvie2007}。
 
 
 \subsection{类太阳恒星} \label{sec:coolstar}
@@ -469,12 +509,117 @@ V_\tif{s} \simeq  V_0 \bigg( \frac{t}{t_0} \bigg)^{-1/2}
 作用下\cite{DobbsDixon2004,Dawson2014}，对恒星自转速度影响的总效应则为：$\dot{\Omega}_\tif{s} 
 \simeq \dot{\Omega}_\tif{s, t} + \dot{\Omega}_\tif{s, w}$，其中 $\dot{\Omega}_\tif{s, t}$ 为潮汐带来的自转
 变化率，$\dot{\Omega}_\tif{s, w}$ 则为星风相应的贡献。利用公式 \ref{eq:wind}，我们可以得到 
-$\dot{\Omega}_\tif{s, w} = -\Omega_\tif{s}^3 R_\tif{s}^2/2 t_0 V_0^2$
+$\dot{\Omega}_\tif{s, w} = -\Omega_\tif{s}^3 R_\tif{s}^2/2 t_0 V_0^2$。星风作用仅仅体现在减慢恒星的自转
+速度上，当自转速度衰减的同时，转速的变化率 $ \dot{\Omega}_\tif{s, t}$ 和 $\dot{\Omega}_\tif{s, w}$ 也一
+并减少，直到最终 $ \dot{\Omega}_\tif{s} \approx 0 $。在此情况下，所有的低质量恒星以及其热木星都会
+演化至星风与潮汐平衡的状态，也即 $\dot{\Omega}_\tif{s, t} = - \dot{\Omega}_\tif{s, w}$ 或者：
 
-\subsection{讨论}
+\begin{equation} \label{eq:lmeq}
+{V_e \over V_0} \equiv \frac{\Omega_eR_\tif{s}}{V_0} = \bigg( \frac{9G M_\tif{s}t_0}
+{2 \gamma_\tif{s}Q_\tif{s}^{\prime}R_\tif{s}^2V_0} \bigg)^{1/3} \bigg( \frac{M_\tif{p}}
+{M_\tif{s}} \bigg)^{2/3} \bigg( \frac{R_\tif{s}}{a} \bigg)^2.
+\end{equation}  %\myequation{低质量恒星星风与潮汐演化的平衡态}
+
+假使 $f_a$, $f_\Omega$ 和 $f_\Psi$ 接近单位一，那么不管是初始自转快过公转（$L<2S$）的系统还是
+相反的（$L>2S$）均可达到上述自转公转平衡态 $L=2S$ 或者 $\Omega_\tif{s} = 2\pi /P_\tif{orb}$，前提是
+行星初始在公转自转同步半长径之内；即使对于 $f_a$, $f_\Omega$ 和 $f_\Psi$ 不接近于一的状况，我们
+发现只要初始行星在该半长径之外，也可以达到该平衡态。因此无论如何，公式 \label{eq:lmeq} 都将带来
+两种最终的状态，即自转公转平衡态或者行星坠毁于主星之内。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/chapter4/fig10a_cold.pdf}
+\caption{类太阳主星与其热类木星的 $v\sin i $---$P$ 图。由于这部分稍冷的恒星受星风与潮汐的同时影响，因此首先我们在右侧纵轴上分别标注了 $V_\tif{s}$ 在不同恒星年龄（$\tau_\tif{s} = 1,\,3,\,10$ Gyr，见公式 \ref{eq:wind}）的值。灰色的实线代表类太阳恒星的旋同步曲线（$\Omega_\tif{s} = n$），在此线的下方则表示行星的潮汐作用会使得行星的轨道收缩而恒星的自转加速。蓝色的实线表示 $L \simeq 2S$，也即轨道演化时标与自转轴演化时标相当（$\tau_a = \tau_\Psi$）。红色的虚线表示不同的恒星 $Q$ 值下的潮汐星风平衡态（公式 \ref{eq:lmeq}），点的标记和图 \ref{fig:hotqq} 一致。}
+\label{fig:coldevo}
+\end{figure}
+
+虽然有了公式 \label{eq:lmeq} 来定定义最终星风、潮汐的合并演化态，但是某些年轻的恒星也许并不能达到
+上述状态。该时间在量级上约为 $t_0(V_0/V_e)^2$，因而对于这部分低质量恒星而言，既需要满足能够使得
+他们演化至平衡态（特别是 $\Psi$ 角的演化），而且还要保证周围的行星能够被我们观测到。故从公式 
+\ref{eq:qspin} 出发，我们重新定义了自转状态的潮汐演化临界值如下：
+
+\begin{equation} \label{eq:lmqspin}
+Q_\tif{s}^{\prime} < Q_\tif{spin} \equiv \bigg( 
+\frac{9G M_\tif{s}t_0}{4 \gamma_\tif{s}R_\tif{s}^2V_0} \bigg) 
+\bigg( \frac{M_\tif{p}}{M_\tif{s}} \bigg)^2  
+\bigg( \frac{t}{\tau_\tif{s}} \bigg)^{3/2} \bigg( \frac{R_\tif{s}}{a} \bigg)^6.
+\end{equation} %\myequation{低质量恒星自转演化潮汐参数临界值}
+
+从而，在恒星自转减速（$Q_\tif{spin} \propto t^{3/2}$）的同时，公式 \ref{eq:lmqspin} 也将变得越来越容
+易被满足，因而此自转潮汐参数值为恒星真实值的上限。
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/chapter4/fig10b_cold.pdf}
+\caption{与图 \ref{fig:hotqq} 类似的，此为低温恒星的 $Q_\tif{orbit}$ 与 $Q_\tif{spin}$ 分布图。我们对所有系统采用了 $\tau_\tif{s} = 4$ Gyr 的恒星年龄，该值的不确定度则为会导致数据点朝着与对角线（ $Q_\tif{spin} = Q_\tif{orbit}$）平行的方向平移。与热恒星周围类似的是，这些系统不太可能在轨道显著变化的同时改变恒星的自转轴方向。} 
+\label{fig:coldqq}
+\end{figure}
 
 
-通过 Transit 以及 Asteroseismology 测量 misalignment 
+我们将类太阳主星的自转速度 $v\sin i$ 与行星的周期 $P$ 画在图 \ref{fig:coldevo} 中，点的含义与前文中图 \ref{fig:hotqq} 中保持一致。首先可以看出来在这类系统中，主星的自转速度与行星的周期并没有相关性。与
+热恒星相比，这部分系统主星的自转速度明显首星风的影响而更小。然而尽管这些恒星的星风效应，绝大部
+分系统依然在平衡状态之上（$L=2S$），即这些行星在共转半径（灰色线）之内的同时，$L<2S$。由于这
+些行星在共转半径之内，因此行星会持续不断的通过潮汐损失角动量来加速恒星自转（以和星风抗衡），从
+而轨道不断收缩直到主星内部。
+
+另外该图右侧纵轴上不同年龄的星风损失率也说明了这一点，可以看到在典型的太阳年龄（$\tau_\tif{s} \sim 
+\tau_\odot \simeq 4 $ Gyr）时刻，星风对恒星角动量损失后的自转速度值已经明显低于现如今观测到的绝大
+部分系统，这也说明了潮汐在此类系统中的确起到了一定的作用。然而折中潮汐作用并没有体现在对 $\Psi$
+的演化上，因为并不能看到 $\Psi > 30^\circ$ 的实心黑点系统与空心黑点系统之间的系统性差异。所以，我
+们将此类系统的 $Q_\tif{orbit}$ 与 $Q_\tif{spin}$  画在了图 \ref{fig:coldqq} 中，可以看到大部分系统主星的
+潮汐演化 $Q$ 参数并没有落在允许的区域（ $Q_\tif{orbit} < Q_\tif{spin}$ ）内，这也说明了潮汐在对这些系
+统的演化起作用的期间，却无法从物理上同时允许自转---轨道也一起被影响。
+
+\subsection{总结与讨论}
+
+自转---公转夹角的测量为我们打开了一扇新的检验热木星形成机制的窗口。在对于热木星究竟是通过盘迁移
+模型还是高偏心率迁移的模型而形成的争辩上，双方均各执一词。如图 \ref{fig:som2th} 所示，从传统的行星
+形成模型出发，行星系统的轨道角动量方向一般被认为与原初行星盘的方向一致，并且恒星自转轴也一同取
+向。这在冷恒星周围看到了，但是在热恒星周围却明显不一致（$\Psi > 0$）。其中一种理论解释认为无论对
+于那种恒星，由于它们周围的热木星的形成过程为高偏心率迁移过程，因此它们周围行星的初始 $\Psi$ 角总
+是随机分布在空间内，但由于潮汐作用在低质量恒星（对流外包层）的耗散效率要比在中等质量恒星（辐射
+外包层）大得多，因而才会有如此的观测现象\cite{Albrecht2012}。但是从图 \ref{fig:hotqq} 和 \ref{fig:coldqq} 
+中我们发现：
+
+\begin{figure}[t!]
+\centering
+\includegraphics[height=0.85\textheight]{figures/chapter4/fig11_som2th.pdf}
+\caption{自转---轨道的指向两种主流解释的示意图。\textbf{1.} 行星轨道取向与主星的自转角动量均保持在原初角动量的位置，有效温度较高的主星的自转轴通过 IGW 激发并改变取向，从而导致观测中的非零 $\Psi$ 角，该理论中的 HJs 往往通过盘迁移而形成，且不依赖于潮汐耗散；\textbf{2.} 行星公转与主星的自转在形成时保持一致，然而由于高偏心率迁移过程中行星的轨道取向被改变，从而导致类太阳恒星系统中有效的潮汐耗散而重新将 $\Psi$ 角减小。}
+\label{fig:som2th}
+\end{figure}
+
+\begin{enumerate}
+\item 没有任何迹象表明 $\Psi$ --- $Q_\tif{spin}$ 具有潮汐效应导致的相关性。因为潮汐作用较强的系统（
+$Q < Q_\tif{spin}$ ）并没有与 $\Psi$ 接近于零的系统呈现相关。
+\item 绝大数系统在图中的「禁区」，即 $Q_\tif{orbit} > Q_\tif{spin}$。在平平衡潮模型下，这些系统 $\Psi$ 
+的演化时标要远大于 $a$ 的时标（$\tau_a < \tau_\Psi$），这些系统的行星在完成对主星自转轴的重新潮汐
+化指向时轨道已经演化至小于主星半径的轨道上。而且对于少部分沿着对角线（ $Q_\tif{orbit} = Q_\tif{spin}$）
+的系统，它们的 $Q$ 值也是有很大的弥散，因此不能用同样一个潮汐参数来描述所有的系统。
+\item 对于大部分观测到了热木星的系统，正说明它们的主星的潮汐参数 $Q$ 的值会在 $10^{4-8}$ 之间分布。
+这样的分布与主星的有效温度没有必然关联。并且处于轨旋同步轨道以内（$\Omega < n$）的系统，当前观
+测到的行星位置极有可能不是它们的最终潮汐演化的结果\cite{Schlaufman2010}。本文得到的 $Q_\tif{orbit}$
+只是该系统的最小可能值。对于处于轨旋同步之外的热木星系统，由于它们向外迁移，因此此 $Q_\tif{orbit}$
+（$10^{6-8}$）则为观测值上限。
+\end{enumerate}
+
+
+在我们的计算中，并没有考虑恒星自转速度中的 $i$ 带来的简并。恒星的年龄也只假定为统一值，类太阳恒
+星的星风作用弥散度也未考虑。$\gamma_\tif{s}$ 对热恒星影响并不大，但是在类太阳恒星的内部可能会最
+多差至一个量级。虽然如此，在测量恒星自转轴\cite{Hirano2012}以及 $\Psi$ 角度的绝对值上，星震学可能
+会大有作为\cite{Chaplin2013,Benomar2014}，而测光中黑子与行星的互掩\cite{Desert2011,Nutzman2011,
+SanchisOjeda2011}以及恒星自转效应如引力昏暗\cite{Barnes2011,Szabo2011}也会对打破这些值的角度简
+并大有用武之地。
+
+值得一提的是，Mazeh 于 2015 年发现类太阳恒星周围的长周期行星也拥有比较一致的自转与轨道法向取向
+\cite{Mazeh2015}。而在潮汐作用中，能量耗散与角动量转移的强度十分依赖于行星的半长径 $a$，因此高
+偏心率迁移理论以及后续的潮汐作用并不能解释此类系统。另外对于热木星周围的伴星存在肯可能性，一些
+巡天显示在这些 HJs 系统周围并没有找到额外的行星级或恒星级伴星\cite{Schlaufman2016,Knutson2014}。
+在这样的背景下，也许 Triaud 于 2010 年提出高偏心率迁移来解释这类系统并不必定可取\cite{Triaud2010}。
+
+而对于图 \ref{fig:som2th} 中第二种解释机制\cite{Rogers2012}，并不要求潮汐在产生公转---自转不重叠上
+起主导作用，因此也是非常有前景的解释。比如 Triana 近期提出通过星震学探测由于 IGW 产生的较差自转
+现象，纬度方向上的较差自转和自转轴指向的变化也同样可能在这些热木星系统的主星上被探测到
+\cite{Triana2015}。
 
 
 
