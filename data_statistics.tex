@@ -12,7 +12,7 @@ exoplanetarchive.ipac.caltech.edu/} 和 \url{http://openexoplanetcatalogue.com/}
 图 \ref{fig:hrplanet} 与 图 \ref{fig:exoskydist} 所示，在这行星数目为 3701 的样本中，共有 
 375 颗系外热类木星系统（后文简称 HJs）。系外行星在南北天球分布并没有太多不均匀性
 （除了巡天观测密集的几个区域以外），而 HJs 却在巨星分支中出现概率偏小（在 \S 
-\ref{sec:hjofgiants} 中讨论），且大多数集中在类太阳恒星周围（下文介绍此为观测选择效
+\ref{sec:fateofplanets} 中讨论），且大多数集中在类太阳恒星周围（下文介绍此为观测选择效
 应）。本章节后续分析将统一建立在此 HJ 列表的范畴内讨论。
 
 \begin{figure}
@@ -60,7 +60,7 @@ Santos2004,Fischer2005,Udry2007,Sozzetti2009,Sousa2011}，这也恰好佐证了 
 分布于 3 天附近存在峰值（见图 \ref{fig:hjperecc}）。因此需要解释 HJ 的形成，大致上有
 两大种方法：在传统的行星形成基础上引入木星的轨道迁移（\textit{orbital migration}）或
 直接于当地形成（\textit{in situ. formation}）。关于热木星的本地形成请参见文献 
-\citen{Batygin2016}，本文分析的主要讨论对象为前者。
+\citen{Batygin2016,Boley2016}，本文分析的主要讨论对象为前者。
 
 \begin{figure}[t]
 \centering
@@ -286,7 +286,7 @@ $\Omega_\tif{s}/n$ 的特定取值下，$\Psi$ 可在轨道几乎不变的同时
 零之前就小于恒星的半径（被主星吞噬）\cite{Dawson2014}。
 
 
-当然，前文我们提到高偏心率迁移并不是唯一能解决观测到的自转---轨道指向不一致的问题，但是这些
+当然，前文我们提到高偏心率迁移并不是唯一能解决观测到的自转---轨道指向不一致的问题，然而这些
 机制中的 HJs 虽然可以通过盘的迁移达到主星附近几天周期的轨道，但是若想解释两种恒星中 $\Psi$ 值
 的差异还是得需要引入潮汐。在这些理论中，唯一不依赖于潮汐耗散率的解释便是 Rogers 于 2012 年提
 出的理论：温度较高的恒星自转轴会由于内部重力波（internal gravity wave，简称 IGW）而被重新指向。
@@ -334,10 +334,10 @@ $\Omega_\tif{s}/n$ 的特定取值下，$\Psi$ 可在轨道几乎不变的同时
 \begin{tabularx}{0.9\textwidth}{@{\extracolsep{\fill}}lcc}
 \toprule
   &  Mean $v \sin i $ [km/s]  & Number of systems \\ \midrule 
-HS & 16.7       & 38                \\ 
-HL & 11.5       & 12                 \\ 
-CS & 4.5        & 129               \\ 
-CL & 2.9        & 196                \\ \bottomrule
+HS (Hot star, Short period planet) & 16.7       & 38                \\ 
+HL (Hot star, Long period planet) & 11.5       & 12                 \\ 
+CS (Cold star, Short period planet) & 4.5        & 129               \\ 
+CL (Cold star, Long period planet) & 2.9        & 196                \\ \bottomrule
 \end{tabularx}
 \end{table}
 }
@@ -599,7 +599,8 @@ $Q < Q_\tif{spin}$ ）并没有与 $\Psi$ 接近于零的系统呈现相关。
 这样的分布与主星的有效温度没有必然关联。并且处于轨旋同步轨道以内（$\Omega < n$）的系统，当前观
 测到的行星位置极有可能不是它们的最终潮汐演化的结果\cite{Schlaufman2010}。本文得到的 $Q_\tif{orbit}$
 只是该系统的最小可能值。对于处于轨旋同步之外的热木星系统，由于它们向外迁移，因此此 $Q_\tif{orbit}$
-（$10^{6-8}$）则为观测值上限。
+（$10^{6-8}$）则为观测值上限。这样的估算值也与 WASP-12 b 和 HATS-18 b 的轨道周期变化率估算得到
+的 $Q$ 值相符合\cite{Maciejewski2016,Penev2016}。
 \end{enumerate}
 
 
@@ -620,6 +621,7 @@ SanchisOjeda2011}以及恒星自转效应如引力昏暗\cite{Barnes2011,Szabo20
 起主导作用，因此也是非常有前景的解释。比如 Triana 近期提出通过星震学探测由于 IGW 产生的较差自转
 现象，纬度方向上的较差自转和自转轴指向的变化也同样可能在这些热木星系统的主星上被探测到
 \cite{Triana2015}。
+
 
 
 
