@@ -111,7 +111,7 @@ $M_\tif{J}$（或行星内部氘元素热核反应的质量下限\cite{Baraffe20
 献\citen{MayorQueloz1995}）： 他们利用坐落在法国 Haute-Provence 天文台的 ELODIE 光谱
 仪从 150 颗恒星样本中成功探测到第一颗类太阳恒星周围的行星  --- 51 Peg b（见图 
 \ref{fig:51pegsi}）。这颗轨道周期只有 4.23 天的类木行星于同一年被美国 Marcy 和 Butler 团
-组证实，随后便引起了对此类行星（即热类木星）形成理论机制广泛而又深远的讨论
+组证实，随后便引起了对此类行星（即热木星）形成理论机制广泛而又深远的讨论
 （\S \ref{sec:pltfrmatntheory}），一直延续至今。
 
 \begin{figure}[ht]
@@ -156,7 +156,7 @@ $M_\tif{J}$（或行星内部氘元素热核反应的质量下限\cite{Baraffe20
 
 \begin{equation}  \label{eq:rvk} 
 K_1 \simeq \frac{28.4 }{\sqrt{1-e^2}} \frac{M_\tif{p}\sin i}{M_\tif{J}} \, \bigg(\frac{M_\tif{p}+M_\tif{s}}{M_\odot}\bigg)^{-1/2} \big(\frac{a}{1 \tif{AU}}\big)^{-1/2} \ \ ,
-\end{equation}  %\myequations{视向速度法探测系外行星}
+\end{equation}  \myequation{探测系外行星中视向速度法引起的主星速度振幅}
 其中各物理量的意义参见附录\ref{apdx:twobodyproblem}。由上式可知，视向速度方法最重要的缺
 陷即它只能测量（或拟合）出行星的最小质量（minimum mass，即$M_\tif{p}\sin i$）因为行星的轨
 道倾角 $i$ 或视线方向夹角无法被测量。但与此同时，视向速度最明显优势是它可以精确测量行星
@@ -221,7 +221,7 @@ Transits（CoRoT）\cite{Bargeetal2008CoRoT} 与 $Kepler$\cite{Boruckietal2010}�
 
 \begin{equation}  \label{eq:astrometry} 
 \alpha \simeq \bigg(\frac{M_\tif{p}}{M_\tif{s}}\bigg) \, \big(\frac{a}{1 \tif{AU}}\big) \, \bigg(\frac{d}{1 \tif{pc}}\bigg)^{-1} \tif{arcsec} \ \ .
-\end{equation} %\myequations{天体测量法探测系外行星}
+\end{equation} \myequation{天体测量法探测系外行星}
 
 如图 \ref{fig:astrometry} 所示，天体测量法只需要恒星在天球球面上的经度纬度信息就可探测到
 行星，它也对主星的性质没有任何依赖，因而有其独特的优势，如可探测轨道倾角参数 $i$。
@@ -347,13 +347,13 @@ MMSN 气体盘的面密度拥有如下的幂率函数形式：
 
 \begin{equation} \label{eq:mmsng}
 \Sigma_g = 1.7 \,\times10^3 \, \bigg(\frac{r}{\tif{AU}}\bigg)^{-3/2}  \tif{g} \,\tif{cm}^{-2} \ \ ; 
-\end{equation} %\myequation{最小质量太阳星云气体面密度分布表达式}
+\end{equation} \myequation{最小质量太阳星云气体面密度分布表达式}
 
 相应的固体盘的面密度分布同样可描述为：
 
 \begin{equation} \label{eq:mmsns}
 \Sigma_s = 7.1 \, f_\tif{ice} \, \bigg(\frac{r}{\tif{AU}}\bigg)^{-3/2}  \tif{g} \,\tif{cm}^{-2} \ \ ,
-\end{equation} %\myequation{最小质量太阳星云固体面密度分布表达式}
+\end{equation} \myequation{最小质量太阳星云固体面密度分布表达式}
 其中 $f_\tif{ice}$ 为雪线因子。在距离太阳 2.7 AU 以外，水分子等会凝结成冰雪等固体物质，因而
 此因子会从 1 增加至约 4.2\cite{IdaLin2004}。从此最小太阳星云模型出发，假若在垂直方向上给它
 一个标高使其变为三维盘，这就是经典太阳系行星形成模型的开端。根据文献 
@@ -405,30 +405,30 @@ MMSN 气体盘的面密度拥有如下的幂率函数形式：
 由于观测极限，太阳系行星如今尚身处观测能力范围以外。如图\ref{fig:exomassper} 所示，
 系外行星种类遍布多样，堪称百花齐放，且已确认数量仍在日趋增加。抛开观测选择
 偏差（observational selection bias），太阳系与之相比似乎显得有些「格格不入」。 按
-照图\ref{fig:exomassper}，本文将系外行星按照其集中区域大致分为三类： 热类木星族
+照图\ref{fig:exomassper}，本文将系外行星按照其集中区域大致分为三类： 热木星族
 （椭圆实线），冷类木星族（方框实线）和超级地球族（椭圆虚线）。
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/chapter1/fig13_exompplot.pdf}
-\caption{现今探测到系外行星的周期 --- 质量散点图。其中不同颜色分别代表不同的探测方法：红色代表视向速度法，灰色是凌星法，绿色指代微引力透镜法黄色代表直接成像法。黑色字母 Me，V，E，Ma，J，S，U，N 则分别表示太阳系内水星，金星，地球，火星，木星，土星，天王星和海王星。本文将系外行星进行人为类别划分包络在封闭曲线内，分别为热类木星族（椭圆实线），冷类木星族（方框实线）和超级地球族（椭圆虚线）。}
+\caption{现今探测到系外行星的周期 --- 质量散点图。其中不同颜色分别代表不同的探测方法：青色代表视向速度法，灰色是凌星法，黄色指代微引力透镜法，红色代表直接成像法，紫色则表示其他方法。黑色字母 Me，V，E，Ma，J，S，U，N 则分别表示太阳系内水星，金星，地球，火星，木星，土星，天王星和海王星。本文将系外行星进行人为类别划分包络在封闭曲线内，分别为热木星族（椭圆实线），冷类木星族（方框实线）和超级地球族（椭圆虚线）。}
 \label{fig:exomassper}
 \end{figure}
 
-\subsubsection{热类木星族 Hot Jupiter Population}
+\subsubsection{热木星族 Hot Jupiter Population}
 
 当 Mayor 和 Queloz 与 1995 年发现第一颗围绕类太阳的系外行星 51 Peg b 时
 \cite{MayorQueloz1995}，整个行星学界都为之震惊，因为这颗类木星的轨道周期
 只有 4.23 天。51 Peg b 单独用经典行星形成理论根本无法解释。由于此类行星非
 常靠近其主星（轨道周期 $P \le10 $天），质量大于土星质量（$0.3\,\tif{M}_\tif{J}$）故
-而得名曰热类木星。作为本册论文重要的研究对象，此类行星详细的介绍内容请
+而得名曰热木星。作为本册论文重要的研究对象，此类行星详细的介绍内容请
 参见 \S \ref{chapter:data_stat}。
 
 
 \subsubsection{冷类木星族  Cold/Normal Jupiter Population}
 
-与轨道距离主星较近的热类木星相对应有一类行星被称作冷类木星（或者常规类木星）。
-此类行星在观测上拥有长于约一百天的轨道周期，有效温度也比热类木星低得多，太阳
+与轨道距离主星较近的热木星相对应有一类行星被称作冷类木星（或者常规类木星）。
+此类行星在观测上拥有长于约一百天的轨道周期，有效温度也比热木星低得多，太阳
 系木星就属于一颗典型冷木星。相比短周期行星，确认此区域的行星通常需要望远镜
 连续观测几年甚至数十年，因而样本完备性也相对较差\cite{Cumming2008}。根据使用
  Keck 望远镜进行的 Lick-Carnegie 行星搜索项目，Rowan 等人通过观测样本估算得到
@@ -502,13 +502,13 @@ Ganymede 的构型堪称如出一辙。理论上，此类轨道构型很有可�
 的轨道偏心率\cite{Naef2001}，远心点居然是近心点距离的近三十倍。同属此类的系统还有 HD 4113
 \cite{Tamuz2008}，HD 80606 行星轨道法向和主星自转轴方向测量（spin-orbit measurement ）
 \cite{Pont2009}表明它们的起源很可能与 Lidov-Kozai 机制\cite{Lidov1962,Kozai1962}有着密切关联
-\cite{Wu2003}，或许是热类木星系统高偏心率迁移的证据（详见 \S \ref{sec:highemig}）。
+\cite{Wu2003}，或许是热木星系统高偏心率迁移的证据（详见 \S \ref{sec:highemig}）。
 
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[height=0.91\textheight]{figures/chapter1/fig15_hjmul.pdf}
-\caption{所有拥有热类木星的已确认多行星系统汇总图，点的相对大小正比于行星的质量。数据同样来自 \url{http://openexoplanetcatalogue.com}。}
+\caption{所有拥有热木星的已确认多行星系统汇总图，点的相对大小正比于行星的质量。数据同样来自 \url{http://openexoplanetcatalogue.com}。}
 \label{fig:hjwcomp}
 \end{figure}
 
@@ -524,10 +524,10 @@ b（周期为 8.5 小时\cite{SanchisOjeda2013}），Kepler-70 b（周期仅 5.8
 \cite{Kennedy2008,Johnson2007b,Jones2014}。观测显示巨星周围的行星普遍距离主星较远
 （$a > 1\,\tif{AU}$），这也许正是主星演化吞噬近距轨道行星的证据\cite{Johnson2007a,Bowler2010}。
 
-\textbf{其他诡怪系统} --- \textit{WASP-47}。 {}  该行星系统拥有一颗典型的热类木星\cite{Hellier2012}，
+\textbf{其他诡怪系统} --- \textit{WASP-47}。 {}  该行星系统拥有一颗典型的热木星\cite{Hellier2012}，
 然而后续长期检测显示该系统有另外两颗小质量行星\cite{Becker2015,SanchisOjeda2015}以及一颗
-长周期冷类木行星\cite{NeveuVanMalle2016}。这和传统的认为热类木星更倾向于成单的想法截然不同
-\cite{Steffen2012}，并且即使与其他包含热类木星的多行星系统相比，WASP-47 也大有不同（如图 
+长周期冷类木行星\cite{NeveuVanMalle2016}。这和传统的认为热木星更倾向于成单的想法截然不同
+\cite{Steffen2012}，并且即使与其他包含热木星的多行星系统相比，WASP-47 也大有不同（如图 
 \ref{fig:hjwcomp}），现有的理论并不能完全解释该系统的构型，因而更完善的形成理论与观测限制
 也更加迫在眉睫。
 
@@ -543,7 +543,7 @@ b（周期为 8.5 小时\cite{SanchisOjeda2013}），Kepler-70 b（周期仅 5.8
 数据处理、如何提高数据的精度（\S \ref{chapter:obs_red}）从而服务于后续行星探测以及原恒星盘
 搜索等科学目标（\S \ref{chapter:form_evo}）。
 
-另外，本文将于 \S \ref{chapter:data_stat} 章详细探讨系外热类木星系统的统计性质，回顾解释这类行
+另外，本文将于 \S \ref{chapter:data_stat} 章详细探讨系外热木星系统的统计性质，回顾解释这类行
 星形成的困难之处。最后还包括如何利用轨道-自转不共面性（spin-orbit misalignment ）来限制这些
 系统的潮汐演化过程和参数，以及这些过程和参数蕴含或还原了哪些系统演化的物理效应。
 

@@ -93,6 +93,7 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{shortvrb}
 \RequirePackage{xltxtra}
+\RequirePackage[titles]{tocloft}
 \RequirePackage[CJKnumber,CJKchecksingle]{xeCJK}
 \RequirePackage{CJKnumb}
 \defaultfontfeatures{Mapping=tex-text}
@@ -390,20 +391,17 @@
 \newtheorem{exercise}{\njut@cap@exercise}[chapter]
 \newtheorem{example}{\njut@cap@example}[chapter]
 \newtheorem{remark}{\njut@cap@remark}[chapter]
-
 \renewenvironment{proof}[1][\njut@cap@proof]{\par
   \pushQED{\qed}%
   \normalfont \topsep6\p@\@plus6\p@\relax
   \trivlist
   \item[\hskip\labelsep\textbf{#1}\@addpunct{:}]\ignorespaces
 }{\popQED\endtrivlist\@endpefalse}
-
 \newenvironment{solution}[1][\njut@cap@solution]{\par
   \normalfont \topsep6\p@\@plus6\p@\relax
   \trivlist
   \item[\hskip\labelsep\textbf{#1}\@addpunct{:}]\ignorespaces
 }{\endtrivlist\@endpefalse}
-
 \newtheorem{algorithm}{\njut@cap@algorithm}[chapter]
 \renewcommand*{\thedefinition}{\dashnumber{\thechapter}{\arabic{definition}}}
 \renewcommand*{\thetheorem}{\dashnumber{\thechapter}{\arabic{theorem}}}
@@ -634,6 +632,26 @@
     \@mkboth{\MakeUppercase\listfigurename}{\MakeUppercase\listfigurename}%
     \@starttoc{lof}%
     \if@restonecol\twocolumn\fi
+}
+\newcommand{\listequationsname}{公式清单}
+\newlistof{myequation}{loe}{\listequationsname}
+\newcommand{\myequation}[1]{%
+\addcontentsline{loe}{myequation}{\protect\numberline{\theequation}#1}\par}
+\setlength{\cftmyequationnumwidth}{3.0em}
+\renewcommand*{\listofmyequation}{%
+    \if@twocolumn
+      \@restonecoltrue\onecolumn
+    \else
+      \@restonecolfalse
+    \fi
+    \nchapter{\listequationsname}%
+    \@mkboth{\MakeUppercase\listequationsname}{\MakeUppercase\listequationsname}%
+    \@starttoc{loe}%
+    \if@restonecol\twocolumn\fi
+}
+\renewcommand{\cftdotsep}{1}
+\renewcommand{\numberline}[1]{%
+  \@cftbsnum #1\@cftasnum\hspace*{0.5em}\@cftasnumb%
 }
 \let\jnl@style=\rmfamily 
 \def\ref@jnl#1{{\jnl@style#1}}% 

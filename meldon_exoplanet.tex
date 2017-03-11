@@ -15,8 +15,9 @@
 % \usepackage[math]{blindtext}
 \usepackage{graphicx, caption, url, footnote, afterpage, epigraph}
 \usepackage{tabularx, multicol, amssymb, bm, amsmath}
-%\usepackage{tocbibind, tocloft, xpatch}
 \usepackage[figuresright]{rotating}
+\usepackage[NoDate, TextAligned]{currvita}
+\tolerance=600
 \usepackage[list=true,listformat=simple]{subcaption}
 \newcommand{\tif}{\mathrm}
 \renewcommand{\labelenumi}{\roman{enumi}.}
@@ -57,7 +58,7 @@
 % 国家图书馆封面上的论文标题第一行，不可换行。此属性可选，默认值为通过\title设置的标题。
 \nlctitlea{巡天时域光变序列分析与}
 % 国家图书馆封面上的论文标题第二行，不可换行。此属性可选，默认值为空白。
-\nlctitleb{太阳系外热类木星统计}
+\nlctitleb{太阳系外热木星统计}
 % 国家图书馆封面上的论文标题第三行，不可换行。此属性可选，默认值为空白。
 \nlctitlec{}
 % 导师的单位名称及地址
@@ -80,7 +81,7 @@
 %\title{}
 % 如果论文标题过长，可以分两行，第一行用\titlea{}定义，第二行用\titleb{}定义，将上面的\title{}注释掉
 \titlea{巡天时域光变序列分析与}
-\titleb{太阳系外热类木星统计}
+\titleb{太阳系外热木星统计}
 % 论文作者姓名
 \author{孟泽洋}
 % 论文作者联系电话
@@ -114,7 +115,7 @@
 % 设置论文的英文封面
 
 % 论文的英文标题，不可换行
-\englishtitle{Light Curve Analysis of Optical Surveys and Statistics of Hot Jupiters}
+\englishtitle{Light Curve Analysis in Optical Survey and Statistics of Hot Jupiters}
 % 论文作者姓名的拼音
 \englishauthor{Meng Ze-Yang}
 % 导师姓名职称的英文
@@ -138,12 +139,12 @@
 \abstracttitlea{巡天时域光变序列分析与}
 % 设置中文摘要页面的论文标题及副标题的第二行。
 % 此属性可选，其默认值为空白
-\abstracttitleb{太阳系外热类木星统计}
+\abstracttitleb{太阳系外热木星统计}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 设置论文的英文摘要
 % 设置英文摘要页面的论文标题及副标题的第一行。
 % 此属性可选，其默认值为使用|\englishtitle|命令所设置的论文标题
-\englishabstracttitlea{Light Curve Analysis of Optical Surveys and}
+\englishabstracttitlea{Light Curve Analysis in Optical Survey and}
 % 设置英文摘要页面的论文标题及副标题的第二行。
 % 此属性可选，其默认值为空白
 \englishabstracttitleb{Statistics of Hot Jupiters} 
@@ -181,7 +182,7 @@
 % 生成附表清单。如无需附表清单则可注释掉下述语句。
 \listoftables
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\listofmyequation
 %\listofequations   ????????????????????????????
 
 % 开始正文部分

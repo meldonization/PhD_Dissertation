@@ -1,16 +1,16 @@
-\chapter{热类木星统计性质} \label{chapter:data_stat}
+\chapter{热木星统计性质} \label{chapter:data_stat}
 
 \section{系外行星统计列表}
 
 在引言部分 \S \ref{sec: exopftheory}，我们曾提到在如今已探测的系外行星中，有一群周期
-小于十天却拥有大于土星质量的行星种群，被称为热类木星\footnote{若按照热类木星的定义，
+小于十天却拥有大于土星质量的行星种群，被称为热木星\footnote{若按照热木星的定义，
 其准确叫法应为近距离类木星，因为行星的有效温度不仅仅与主星的距离有关，而且还与主
 星的有效温度有关。}。为了研究此类行星的统计性质，本文汇总了知名的四大系外行星数据
 库网站 \url{http://exoplanets.eu/}、\url{http://exoplanets.org/}、\url{http://
 exoplanetarchive.ipac.caltech.edu/} 和 \url{http://openexoplanetcatalogue.com/} ，并整理出
 比较统一规范的系外行星列表\footnote{\url{https://github.com/EXONJU/ExoPlanetList}}。如
 图 \ref{fig:hrplanet} 与 图 \ref{fig:exoskydist} 所示，在这行星数目为 3701 的样本中，共有 
-375 颗系外热类木星系统（后文简称 HJs）。系外行星在南北天球分布并没有太多不均匀性
+375 颗系外热木星系统（后文简称 HJs）。系外行星在南北天球分布并没有太多不均匀性
 （除了巡天观测密集的几个区域以外），而 HJs 却在巨星分支中出现概率偏小（在 \S 
 \ref{sec:fateofplanets} 中讨论），且大多数集中在类太阳恒星周围（下文介绍此为观测选择效
 应）。本章节后续分析将统一建立在此 HJ 列表的范畴内讨论。
@@ -43,7 +43,7 @@ P<5.5$ years 的行星的出现概率可用如下公式描述：
 
 \begin{equation} \label{eq:pltoccurate}
 \frac{\tif{d} N}{\tif{d}\ln M_\tif{p} \tif{d}\ln P} \propto  M_\tif{p}^\alpha P^\beta \ \, ,
-\end{equation} %myequation{行星出现数目的概率分布}
+\end{equation} \myequation{行星出现数目的概率分布}
 其中指数 $\alpha = -0.31 \pm 0.20 $，$\beta = 0.26 \pm 0.10$。结合其他种类的巡天项目，
 对应的 HJs 的出现概率大致为 0.5 \% 到1.5 \% 之间不等\cite{Howard2012,Marcy2005,
 Mayor2011,Wright2012}。此概率的不同和恒星的星族选择密切相关\cite{Wright2012}，比如
@@ -65,7 +65,7 @@ Santos2004,Fischer2005,Udry2007,Sozzetti2009,Sousa2011}，这也恰好佐证了 
 \begin{figure}[t]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/chapter4/fig3_peccdist.jpeg}
-\caption[热类木星系统的周期与轨道偏心率分布图。可以看到系外行星样本（未经过选择效应修正）在三天周期分布达到热类木星的峰值，虚线为类太阳恒星周围行星拥有近心点距离 $a(1-e) = 0.03$ AU 的轨道。右侧图为 SB9 光谱双星星表的类似分布图，图片取自 Winn 和 Fabrycky。]{热类木星系统的周期与轨道偏心率分布图。图片取自文献 \citen{WinnFabrycky2015}，可以看到系外行星样本（未经过选择效应修正）在三天周期分布达到热类木星的峰值，虚线为类太阳恒星周围行星拥有近心点距离 $a(1-e) = 0.03$ AU 的轨道。右侧图为 SB9 光谱双星星表的类似分布图。}
+\caption[热木星系统的周期与轨道偏心率分布图。可以看到系外行星样本（未经过选择效应修正）在三天周期分布达到热木星的峰值，虚线为类太阳恒星周围行星拥有近心点距离 $a(1-e) = 0.03$ AU 的轨道。右侧图为 SB9 光谱双星星表的类似分布图，图片取自 Winn 和 Fabrycky。]{热木星系统的周期与轨道偏心率分布图。图片取自文献 \citen{WinnFabrycky2015}，可以看到系外行星样本（未经过选择效应修正）在三天周期分布达到热木星的峰值，虚线为类太阳恒星周围行星拥有近心点距离 $a(1-e) = 0.03$ AU 的轨道。右侧图为 SB9 光谱双星星表的类似分布图。}
 \label{fig:hjperecc}
 \end{figure}
 
@@ -79,7 +79,7 @@ Santos2004,Fischer2005,Udry2007,Sozzetti2009,Sousa2011}，这也恰好佐证了 
 \begin{eqnarray}
 E = - M_\tif{p} \, \frac{\mu}{2a} \\ \label{eq:2be}
 J = M_\tif{p} n a^2 \label{eq:2bam}
-\end{eqnarray} %\myequation{二体运动中的能量与角动量}
+\end{eqnarray} \myequation{二体运动中的能量与角动量}
 其中 $n$ 为平均轨道角速度，满足开普勒第三定律 $n^2a^3=\mu$，其中$\mu = G M_\tif{s}$
 如此轨道迁移势必意味着角动量（Angular Momentum，简称 AM）与能量的交换，因此必须
 有其它物体与行星之间发生 AM 与能量传递。这样一来，我们又可将轨道迁移大致分为两
@@ -95,7 +95,7 @@ J = M_\tif{p} n a^2 \label{eq:2bam}
 
 \begin{equation} \label{eq:hillradius}
 r_H = \big( \frac{M_\tif{p}}{3M_\tif{s}} \big) ^{1/3}
-\end{equation} %myequation{希尔半径（或洛希半径）表达式}
+\end{equation} \myequation{希尔半径或洛希半径的表达式}
 
 如果行星的质量足够大，使得希尔半径大于盘的标高（$r_H > h$），那么盘可能被被打开缺
 口。与此同时，由于气体盘的粘性，此缺口也可能被气体重新填上。1986 年，Lin 等人通过
@@ -160,7 +160,7 @@ Rasio与 Ford 就意识到潮汐因素在 HJs 的形成演化中起了非常重�
 
 \begin{equation} \label{gravipotential}
 U(r) = \sum\limits_{l=2}^\infty \sum\limits_{p=0}^l\sum\limits_{q=-\infty}^\infty \frac{Gm}{a} A_{l,p,q}(e,\,\Psi)\big(\frac{r}{a}\big)^l Y_l^p(\theta,\,\phi) \tif{e}^{-\tif{i}q n t} \ .
-\end{equation} %\myequation{非球形引力势展开}
+\end{equation} \myequation{非球形引力势展开}
 各物理量的定义如图 \ref{fig:tideillu} 所示，$n$ 为平均轨道角速度，$a,e$ 为轨道根数
 （有时也会用二体之间的距离 $d$ 来作为展开基数），$\Psi$ 为 $m$ 体轨道法向 $L$ 
 与 $M$ 体自转法向的夹角（ 又称 obliquity），$A_{l,p,q}$ 系数则依赖于天体 $m$ 的轨
@@ -180,7 +180,7 @@ U(r) = \sum\limits_{l=2}^\infty \sum\limits_{p=0}^l\sum\limits_{q=-\infty}^\inft
 
 \begin{equation} \label{eq:eqtide}
 Q^{-1}=\frac{1}{2\pi E_0} \oint \big( -\frac{\tif{d} E}{\tif{d} t}\big)\,\tif{d} t = \tan 2\delta \ ,
-\end{equation} %\myequation{平衡潮汐模型下的 $Q$ 参数}
+\end{equation} \myequation{平衡潮汐模型下的 $Q$ 参数}
 
 Goldreich 和 Soter 于 1966 年将上述模型用在计算太阳系内行星的潮汐耗散率中
 \cite{Goldreich1966}，同样的理论也用在近距离双星潮汐演化中\cite{Hut1981,Zahn1977}。
@@ -207,7 +207,7 @@ Rossiter-McLaughlin 效应（RM 效应）最早可能是被 Holt 于 1893 年预
 
 \begin{equation} \label{eq:rvdvofrm}
 \Delta V_\tif{RM} = (R_\tif{p} / R_\tif{s})^2 \sqrt{(1-b^2)} \, v\sin i
-\end{equation} %\myequation{RM 效应的视向速度波动振幅}
+\end{equation} \myequation{Rossiter-McLaughlin 效应产生的视向速度波动振幅}
 其中 $(R_\tif{p} / R_\tif{s})^2$ 约为凌星深度，$b$ 为凌星最大时刻两天体之间的距离影响
 因子，$v\sin i$ 为主星的空间投影自转速度。图 \ref{fig:rmsim} 所示为不同的 $b$ 与 
 $\lambda$ 参数下恒星视向速度的理论波动，$\lambda$ 在系外行星领域被称作投影行星
@@ -350,7 +350,7 @@ CL (Cold star, Long period planet) & 2.9        & 196                \\ \bottomr
 
 \begin{equation} \label{eq:spinam}
 J_{*,\,\tif{spin}} \equiv S = \gamma_\tif{s} M_\tif{s} R_\tif{s}^2 \Omega_\tif{s} \ ,
-\end{equation} %\myequation{恒星自转角动量}
+\end{equation} \myequation{恒星的自转角动量}
 其中 $\gamma_\tif{s}$ 为恒星转动惯量系数。行星的轨道角动量则为 $L = M_\tif{p}na^2$（参见
 公式 \ref{eq:2bam}）。在潮汐力矩的作用下，整个系统的总角动量（$S+L$）守恒，因此可以得
 到恒星的自转角动量变化率与行星公转角动量变化率满足关系式 $\dot{J} = \dot{S}$。
@@ -365,7 +365,7 @@ J_{*,\,\tif{spin}} \equiv S = \gamma_\tif{s} M_\tif{s} R_\tif{s}^2 \Omega_\tif{s
     \frac{\dot{a}}{a} &= - \frac{f_a(\Psi)}{\tau_e}   \label{eq:smaevo}  \\
     \frac{\dot{\Omega}}{\Omega} & = \frac{Lf_\Omega(\Psi)}{2S_{\tau_e}} \label{eq:spinevo}
 \end{align}
-\end{subequations} %\myequation{潮汐对行星轨道以及恒星自转的影响}
+\end{subequations} \myequation{潮汐对行星轨道以及恒星自转的影响}
 其中 $f_\Psi(\Psi) = 1 - (\Omega_\tif{s}/2n)(\cos\Psi - S/L)$，$f_a(\Psi) = 1 - (\Omega_\tif{s}/n)\cos\Psi$，
 $f_\Omega(\Psi) = \cos\Psi - (\Omega_\tif{s}/2n)(1+ \cos^2\Psi)$（文献 \citen{Goldreich1966,
 Eggleton1998,Ogilvie2004}）。典型的潮汐演化时标则为：
@@ -373,7 +373,7 @@ Eggleton1998,Ogilvie2004}）。典型的潮汐演化时标则为：
 \begin{equation} \label{eq:taue}
 \tau_e \equiv \left( {Q_\tif{s} \over 3 k_2} \right) \left( {M_\tif{s} \over M_\tif{p}}\right)
 \left( {a \over R_\tif{s}}\right)^5 \left( {P \over 2 \pi} \right) 
-\end{equation} %\myequation{典型的潮汐演化时标}
+\end{equation} \myequation{典型的潮汐演化时标}
 
 在方程 \label{eq:taue} 中，一般会采用 Goldreich 与 Stoer 的潮汐参数记号 $Q_\tif{s}^\prime \equiv 3 
 Q_\tif{s}/2k_2$，其中 $k_2 =1.5/(1+{\tilde \mu})$，且 ${\tilde \mu} = 19 \mu/(2 \rho_\tif{s} 
@@ -389,7 +389,7 @@ g_\tif{s} R_\tif{s})$ 为等效刚性系数, $\mu$，$\rho_\tif{s}$ 和 $g_\tif{
     \tau_a &\simeq - \frac{L}{2S}\tau_\Omega \simeq \frac{L}{2S} \frac{f_\Psi}{f_a} \tau_\Psi \\
     \tau_\Psi &\simeq -\frac{f_\Omega}{f_\Omega} \tau_\Omega 
 \end{align}
-\end{subequations} %\myequation{潮汐对行星轨道以及恒星自转的影响}
+\end{subequations} \myequation{潮汐对行星轨道以及恒星自转的影响}
 其中我们定义 $\tau_a \equiv a /{\dot a}$,  $\tau_\Omega \equiv \Omega / {\dot \Omega}_{\tif{s, t}}$, 
 $\tau_\Psi \equiv \Psi / {\dot \Psi}$ 为典型的行星轨道、恒星自转以及自转---公转夹角演化时标。
 
@@ -414,7 +414,7 @@ Zahn1977,Goldreich1989,Penev2007}、内部结构\cite{Terquem1998,Goodman2009}�
 Q_\tif{s}^\prime > Q_{\rm orbit} \equiv {9 \tau_\tif{s} \over 2} 
 {M_\tif{p} \over M_\tif{s}}  \left( {G M_\tif{s} \over R_\tif{s}^3} \right)^{1/2}
 \left({R_\tif{s} \over a} \right)^{13/2}.
-\end{equation}  %\myequation{行星轨道演化所需求的平衡潮参数}
+\end{equation}  \myequation{行星轨道演化所需求的平衡潮参数}
 其中我们引入 $Q_{\rm orbit}$ 来指示过去行星轨道的平衡潮演化参数。这里我们将前文提到的恒星内部
 的耗散参数 $Q_\tif{s}^\prime $ 全部记成 $Q$ 以示美观。
 
@@ -429,7 +429,7 @@ Q_\tif{s}^\prime < Q_{\rm spin} \equiv {9 G M_\tif{s} \tau_\tif{s}
 \over 4 \gamma_\tif{s} R_\tif{s}^2 V_\tif{s}} 
 \left( {M_\tif{p} \over M_\tif{s}} \right)^2 
 \left({R_\tif{s} \over a} \right)^{6}.
-\end{equation} %\myequation{恒星自转演化所需求的平衡潮参数}
+\end{equation} \myequation{恒星自转演化所需求的平衡潮参数}
 这里的 $Q_{\rm spin} $ 为过去主星自转（以及自转---公转夹角）的平衡潮演化参数，其中公式 \ref{eq:qorbit} 
 与公式 \ref{eq:qspin} 之间满足关系 $Q_{\rm spin} = L/2S Q_{\rm orbit}$。
 
@@ -443,7 +443,7 @@ Q_\tif{s}^\prime < Q_{\rm spin} \equiv {9 G M_\tif{s} \tau_\tif{s}
 
 \begin{equation} \label{eq:vc}
 V_c \equiv {M_\tif{p} {\sqrt{G M_\tif{s} a}} /( 2 \gamma_\tif{s} m_\tif{s}R_\tif{s}}).
-\end{equation} %\myequation{潮汐演化中恒星自转速度的临界取值}
+\end{equation} \myequation{潮汐演化中恒星自转速度的临界取值}
 
 对于在快速旋转恒星（$\Omega_\tif{s} > n$）周围的行星，若其轨道半长径满足 $a > a_{cr}$，那么它将会
 接受来自恒星的角动量，轨道也将	扩张至当前观测的位置附近。而由于在方程 \ref{eq:taue} 中 $\tau_a 
@@ -504,7 +504,7 @@ $\Omega_\tif{s} > n$）则会膨胀，且这些快速自转系统的 $\Psi$ 值�
 
 \begin{equation} \label{eq:wind}
 V_\tif{s} \simeq  V_0 \bigg( \frac{t}{t_0} \bigg)^{-1/2}
-\end{equation}
+\end{equation} \myequation{类太阳恒星在星风作用下的自转速度损失率}
 这里的 $t_0$ 与 $V_0$ 在本文分别取为 $\simeq$1 Gyr 与 $\simeq$ 4 km s$^{-1}$。在星风与潮汐的同时
 作用下\cite{DobbsDixon2004,Dawson2014}，对恒星自转速度影响的总效应则为：$\dot{\Omega}_\tif{s} 
 \simeq \dot{\Omega}_\tif{s, t} + \dot{\Omega}_\tif{s, w}$，其中 $\dot{\Omega}_\tif{s, t}$ 为潮汐带来的自转
@@ -518,7 +518,7 @@ $\dot{\Omega}_\tif{s, w} = -\Omega_\tif{s}^3 R_\tif{s}^2/2 t_0 V_0^2$。星风�
 {V_e \over V_0} \equiv \frac{\Omega_eR_\tif{s}}{V_0} = \bigg( \frac{9G M_\tif{s}t_0}
 {2 \gamma_\tif{s}Q_\tif{s}^{\prime}R_\tif{s}^2V_0} \bigg)^{1/3} \bigg( \frac{M_\tif{p}}
 {M_\tif{s}} \bigg)^{2/3} \bigg( \frac{R_\tif{s}}{a} \bigg)^2.
-\end{equation}  %\myequation{低质量恒星星风与潮汐演化的平衡态}
+\end{equation}  \myequation{低质量恒星星风与潮汐演化的平衡态}
 
 假使 $f_a$, $f_\Omega$ 和 $f_\Psi$ 接近单位一，那么不管是初始自转快过公转（$L<2S$）的系统还是
 相反的（$L>2S$）均可达到上述自转公转平衡态 $L=2S$ 或者 $\Omega_\tif{s} = 2\pi /P_\tif{orb}$，前提是
@@ -529,7 +529,7 @@ $\dot{\Omega}_\tif{s, w} = -\Omega_\tif{s}^3 R_\tif{s}^2/2 t_0 V_0^2$。星风�
 \begin{figure}[t]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/chapter4/fig10a_cold.pdf}
-\caption{类太阳主星与其热类木星的 $v\sin i $---$P$ 图。由于这部分稍冷的恒星受星风与潮汐的同时影响，因此首先我们在右侧纵轴上分别标注了 $V_\tif{s}$ 在不同恒星年龄（$\tau_\tif{s} = 1,\,3,\,10$ Gyr，见公式 \ref{eq:wind}）的值。灰色的实线代表类太阳恒星的旋同步曲线（$\Omega_\tif{s} = n$），在此线的下方则表示行星的潮汐作用会使得行星的轨道收缩而恒星的自转加速。蓝色的实线表示 $L \simeq 2S$，也即轨道演化时标与自转轴演化时标相当（$\tau_a = \tau_\Psi$）。红色的虚线表示不同的恒星 $Q$ 值下的潮汐星风平衡态（公式 \ref{eq:lmeq}），点的标记和图 \ref{fig:hotqq} 一致。}
+\caption{类太阳主星与其热木星的 $v\sin i $---$P$ 图。由于这部分稍冷的恒星受星风与潮汐的同时影响，因此首先我们在右侧纵轴上分别标注了 $V_\tif{s}$ 在不同恒星年龄（$\tau_\tif{s} = 1,\,3,\,10$ Gyr，见公式 \ref{eq:wind}）的值。灰色的实线代表类太阳恒星的旋同步曲线（$\Omega_\tif{s} = n$），在此线的下方则表示行星的潮汐作用会使得行星的轨道收缩而恒星的自转加速。蓝色的实线表示 $L \simeq 2S$，也即轨道演化时标与自转轴演化时标相当（$\tau_a = \tau_\Psi$）。红色的虚线表示不同的恒星 $Q$ 值下的潮汐星风平衡态（公式 \ref{eq:lmeq}），点的标记和图 \ref{fig:hotqq} 一致。}
 \label{fig:coldevo}
 \end{figure}
 
@@ -543,7 +543,7 @@ Q_\tif{s}^{\prime} < Q_\tif{spin} \equiv \bigg(
 \frac{9G M_\tif{s}t_0}{4 \gamma_\tif{s}R_\tif{s}^2V_0} \bigg) 
 \bigg( \frac{M_\tif{p}}{M_\tif{s}} \bigg)^2  
 \bigg( \frac{t}{\tau_\tif{s}} \bigg)^{3/2} \bigg( \frac{R_\tif{s}}{a} \bigg)^6.
-\end{equation} %\myequation{低质量恒星自转演化潮汐参数临界值}
+\end{equation} \myequation{低质量恒星自转演化潮汐参数临界值}
 
 从而，在恒星自转减速（$Q_\tif{spin} \propto t^{3/2}$）的同时，公式 \ref{eq:lmqspin} 也将变得越来越容
 易被满足，因而此自转潮汐参数值为恒星真实值的上限。

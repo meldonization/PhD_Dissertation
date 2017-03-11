@@ -148,15 +148,16 @@ USNO-B1.0 参考星表对比从而得到最终星表。在以上的工作中，�
 为 $f_0$，即 $F_{\rm{g}}=f_0\cdot F_{\rm{gs}}$；2. 鬼像对背景星造成的光子数影响比例 $f_1 $ 只是
 距离 $d$ 的函数，$\Delta F_{\tif{s}}=F_{\tif{s}}^1-F_{\tif{s}}^0=f_1(d)\cdot F_{\tif{g}}$。若此时带入流量与星等之间的转换关系 $m=-2.5\lg F+m_0$，我们可以得到如下两个等式：
 
+
 \begin{equation} \label{eq:ghostformular}
+\arraycolsep=1.4pt\def\arraystretch{2.2}
 \left\{
 \begin{array}{l}
 m_{\tif{g}} = -2.5 \lg f_0 + m_{\tif{gs}} \\
-\\ 
 f_1(d) \cdot f_0 \cdot C^{m_{\tif{gs}}} = C^{m^1_{\tif{s}}}-C^{m^0_{\tif{s}}}  \, \ ,
 \end{array} 
 \right. 
-\end{equation} %\myequation{修正鬼像星等差的基本公式}
+\end{equation} \myequation{修正鬼像星等差的基本公式}
 其中常数 $C=\lg 2.5$。从统计上，我们可从鬼像、源恒星以及被影响的背景星的列表中拟合两个自由参
 数 $f_0$ 和 $f_1(d)$。这里需要指出的是不同亮星产生的鬼像之间的参数并不完全一致，为了方便起
 见，我们归一化处理了第二个参数 $f_1(d)$。
@@ -228,7 +229,7 @@ CSTAR ID	&    R.A.   &   Decl.  	       &    masterX    &   masterY    &    $i$ 
 的关系式：
 \begin{equation} \label{eq:ghostgeometry}
 r_{\tif{ghost}}=2\cdot d_{\tif{Pole, axis}} \ \ . 
-\end{equation} %\myequation{鬼像半径与南极点以及光学对称轴之间的几何关系}
+\end{equation} \myequation{鬼像半径与南极点以及光学对称轴之间的几何关系}
 
 如果将南极点的本地坐标值（$[523,\,467]$）与上文提到的光学对称轴坐标值（$[477,\ 497]$）带入上式，可算得鬼像的半径理论值为 109 像素，这和前面的拟合值一致。
 
@@ -255,7 +256,7 @@ r_{\tif{ghost}}=2\cdot d_{\tif{Pole, axis}} \ \ .
 星的亮度开始被影响，而这个临界值就是鬼像展源半径的大小。该高斯函数有如下形式：
 \begin{equation} \label{eq:ghostf1d}
 f_1(d) \simeq A_0 \cdot e^{-Z^2/2} \ \ , 
-\end{equation}
+\end{equation} \myequation{鬼像影响因子参数 $f_1(d)$}
 其中 $Z = (d-A_1)/A_2,\ A_0 \approx 0.97,\ A_1 \approx -0.86$，$A_2 \approx 2.99$。这边需要强调的
 是由于并不知道背景星被鬼像遮挡后的真正星等值，因而我们假设星等值为固定值（取自文献 
 \citen{Wang2012}）。上述高斯函数也正好说明鬼像的典型半径为 6 个像素点，这明显大于孔径测光所
