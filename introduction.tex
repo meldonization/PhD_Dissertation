@@ -99,12 +99,12 @@ $M_\tif{J}$（或行星内部氘元素热核反应的质量下限\cite{Baraffe20
 另外一面，Struve 在1952 年提出短周期类木系外行星可同时通过视向速度与测光探测的设想
 \cite{Struve1952}。然而科学界当时理所应当都认为木星只能处在距离主星 5 AU 轨道上，因此
 需要太长的时间跨度来确认探测\footnote{一般来说，由于引力所造成的周期信号被连续确认三
-个周期以上便被认为是真实的天体信号。}。不过，恒星光谱学依然在其间飞速发展，HD 114762 
+个周期以上便被认为是真实的天体信号。}。不过，恒星光谱学依然在其间飞速发展，如 HD 114762 
 被发现拥有一颗非常接近系外行星质量上限的褐矮伴星\cite{Latham1989}。
 
 此时，来自美国的二人团队 Wolszczan 和 Frail 于 1992 年利用射电脉冲信号的周期变化率在
 脉冲星 PSR1257+12 周围率先成功探测到包含两颗约 3 $M_\oplus$ 行星的行星系统
-\cite{WolszczanFrail1992}。而 Walker 等人则在对主序恒星长达 12 年的视向速度监测中，
+\cite{WolszczanFrail1992}。而此时 Walker 等人则在对主序恒星长达 12 年的视向速度监测中，
 宣布没有迹象表明他们嗅探到系外木星信号\cite{Walkeretal1995}。
 
 同一年，来自瑞士日内瓦天文台的 Mayor 和 Queloz 做出了系外行星领域里程碑式的发现（文
@@ -138,9 +138,9 @@ $M_\tif{J}$（或行星内部氘元素热核反应的质量下限\cite{Baraffe20
 \section{探测方法} \label{sec:detmeth}
 
 天文学所研究的天体普遍离地球遥远，因而观测手段也主要集中在分析天体发射的光子上。
-观测系外行星相较与恒星或太阳系内行星，通常要求非常高分辨率、灵敏度和稳定性的仪器，
+观测系外行星相较恒星或太阳系内行星，通常需要用到非常高分辨率、灵敏度和稳定性的仪器，
 也因而会遇到诸多困难，甚至还得排除恒星自身活动的干扰。比如测量围绕类太阳的系外地球
-需要精度为 1 m s$^{-1}$的视向速度测量，相当于使用分辨率为 R = 100,000 的光谱仪器探测
+需要精度为 1 m$\odot$s$^{-1}$的视向速度测量，相当于使用分辨率为 R = 100,000 的光谱仪器探测
 主星光谱约 $10^{-6} \AA$ 的移动大小。参考书籍 \citen{Perryman2014exohb}，本文大
 致罗列目前主要探测系外行星的方法如下：
 
@@ -151,14 +151,15 @@ $M_\tif{J}$（或行星内部氘元素热核反应的质量下限\cite{Baraffe20
 向速度（Radial Velocity，简称 RV）法就是通过测量视线方向上恒星谱线的多普勒红（蓝）移来
 探测周围行星的存在。
 
-在简单的二体运动中，可以得到一颗轨道半长径为 $a$，质量为 $M_\tif{p}$ 的行星，可对质量
-为 $M_\tif{s}$ 的宿主恒星造成如下大小的半振幅视向速度 $K_1$（单位：米每秒）：
+在简单的二体运动中（\S \ref{apdx:twobodyproblem}），可以得到一颗轨道半长径为 $a$，质量
+为 $M_\tif{p}$ 的行星，可对质量为 $M_\tif{s}$ 的宿主恒星造成如下大小的半振幅视向速度 $K_1$
+（单位：米每秒）：
 
 \begin{equation}  \label{eq:rvk} 
 K_1 \simeq \frac{28.4 }{\sqrt{1-e^2}} \frac{M_\tif{p}\sin i}{M_\tif{J}} \, \bigg(\frac{M_\tif{p}+M_\tif{s}}{M_\odot}\bigg)^{-1/2} \big(\frac{a}{1 \tif{AU}}\big)^{-1/2} \ \ ,
 \end{equation}  \myequation{探测系外行星中视向速度法引起的主星速度振幅}
 其中各物理量的意义参见附录\ref{apdx:twobodyproblem}。由上式可知，视向速度方法最重要的缺
-陷即它只能测量（或拟合）出行星的最小质量（minimum mass，即$M_\tif{p}\sin i$）因为行星的轨
+陷即它只能测量（或拟合）出行星的最小质量（minimum mass，即$M_\tif{p}\sin i$），因为行星的轨
 道倾角 $i$ 或视线方向夹角无法被测量。但与此同时，视向速度最明显优势是它可以精确测量行星
 的轨道偏心率 $e$（图 \ref{fig:rvcurve} ）。
 
@@ -196,10 +197,10 @@ eclipse），而当恒星处于系外行星与地球的连线时则被成为掩�
 比视向速度晚了五年\cite{Seager2010exobook}。当时视向速度已经发现了 64 颗系外行星，在对
 其中 6 颗行星系统的凌星监测中，行星 HD 209458 b 的主掩食成功被观测到\cite{Henryetal2000, Charbonneauetal2000}。
 这种滞后主要是因为凌星发生的几何空间概率较低（$p = R_\tif{s} / a$），与此同时还要求观测的
-相对测光精度至少达到 5 \textperthousand（对应于木星凌太阳），凌星法也因此通常结合巡天计
+相对测光精度至少达到 5 \textperthousand（对应于木星凌太阳）。凌星法也因此通常结合巡天计
 划（尤其是大视场巡天）展开，因而提高测光精度、处理数据和去除假阳性信号也成了该方法的技
 术难关\footnote{凌星法只能得到系外行星的候选体，一般还需额外使用其他方法联合认证该行星，
-如中天时刻变化（Transit Timing Variation，简称 TTV）或者 RV。}。目前地面上比较成熟的巡天项
+如凌星计时变化（Transit Timing Variation，简称 TTV）或者 RV。}。目前地面上比较成熟的巡天项
 目，包括 The Trans-atlantic Exoplanet Survey（TrES）\cite{Alonsoetal2004TrES}，XO
 \cite{McCulloughetal2005XO}，The Hungarian-made Automated Telescope Network（HAT）
 \cite{Bakosetal2007HAT} 以及 Wide Angle Search for Planets（SuperWASP）
@@ -267,7 +268,7 @@ Very Large Telescope（VLT）和 Gemini Planet Imager（GPI）等
 计算前景星对视线方向上背景星引力放大率的文章\cite{Einstein1936}。而且在第一颗用微引力透镜
 观测得的行星前，Mao 和  Paczynski 就已经从理论上提出了行星能在恒星引力透镜基础上造成额外
 的微引力透镜效\cite{Mao1991}。如今已经有 42 个通过微引力透镜发现的系外行星系统，包括 2 个
-双行星系统\footnote{参见 NASA Exoplanet Archive：\url{http://exoplanetarchive.ipac.caltech.edu/}}。
+双行星系统\footnote{数据截至 2017 年 2 月，参见 NASA Exoplanet Archive：\url{http://exoplanetarchive.ipac.caltech.edu/}}。
 在役的仪器主要有 Optical Gravitational Lensing Experiment（OGLE）\cite{Udalskietal2002OGLE} 
 和 Microlensing Observations in Astrophysics（MOA）\cite{Bond2004MOA}，它们一般会监测恒星
 密度较大的区域如银河系核球（Galactic Bulge，简称 GB）。
@@ -315,14 +316,14 @@ TTV\cite{Ford2011TTV,Xie2013} 和星震时变\cite{Silvotti2007,Murphy2016}。�
 \cite{Johnstone1998,Hollenbach1994}，以及气体盘自身的粘滞性
 \cite{Shakura1973,Gammie1996}，角动量会从从气体盘的内侧向外转移，原行星盘也会
 逐渐耗散（图 \ref{fig:discevo}）。2001 年 Haisch 等人则通过统计不同星团中的红外超恒星比
-例\cite{Haisch2001}，发现原行星盘的存活时标在不到百万年（~10 Myr）的量级（见图 \ref{fig:pftimescale}）。这对类木行星行形成
-有着非常重要的限制，因为如今普遍认为木星必须在气体盘消散前吸收足够的气体来长成如今的质量大
-小\cite{WilliamsCieza2011}。关于星周盘的详细介绍请参考 \S \ref{chapter:form_evo}。
+例\cite{Haisch2001}，发现原行星盘的存活时标在不到百万年（约 10 Myr）的量级（见图 \ref{fig:pftimescale}）。
+这对类木行星行形有着非常重要的限制，因为如今普遍认为木星必须在气体盘消散前吸收足够的气体
+以长成如今的质量大小\cite{WilliamsCieza2011}。关于星周盘的详细介绍请参考 \S \ref{chapter:form_evo}。
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/chapter1/fig10_discevo.eps}
-\caption[原行星盘演化中后期四个主要过程，图片版权 Williams 和 Cieza。]{原行星盘演化中由 (a) 至 (d) 四个主要过程，图片取自文献\citen{WilliamsCieza2011}。 }
+\caption[原行星盘演化中由 (a) 至 (d) 四个主要过程，分别为活跃吸积阶段、固体沉降阶段、盘消散阶段与残骸盘阶段。图片版权 Williams 和 Cieza。]{原行星盘演化中由 (a) 至 (d) 四个主要过程，分别为活跃吸积阶段、固体沉降阶段、盘消散阶段与残骸盘阶段。图片取自文献\citen{WilliamsCieza2011}。 }
 \label{fig:discevo}
 \end{figure}
 
@@ -338,8 +339,8 @@ TTV\cite{Ford2011TTV,Xie2013} 和星震时变\cite{Silvotti2007,Murphy2016}。�
 
 早在 18 世纪中页，关于行星形成假说就已纷繁多样。其中康德、拉普拉斯等人提出的「星云假说」
 因可较好应用至太阳系行星系统中而发展壮大。表\ref{tbl:solarsystem} 给出了太阳系八大行星的物
-理参数，由此表可得出太阳系各大行星具有非常好的一致共面性，除了水星以外都处于近圆轨道，
-且在火星和木星之间存在明显的物理性质差异。如果将每个行星的重元素平均到打散至行星之间的
+理参数，由此表可粗略看出太阳系各大行星具有非常好的一致共面性，除了水星以外都处于近圆轨道，
+且在火星和木星之间存在明显的物态性质差异。如果将每个行星的重元素平均到打散至行星之间的
 空隙中，并且混入适量的氢、氦使得新的混合物拥有与太阳相等的金属丰度
 \footnote{在天文学中，金属元素特指氢和氦以外的所有重元素。}（[Fe/H]），这样得到的最小质量
 原太阳行星盘被称作 Minimum Solar Mass Nebula\cite{Weidenschilling1977,Hayashi1981}，
@@ -384,8 +385,8 @@ MMSN 气体盘的面密度拥有如下的幂率函数形式：
 在 MMSN 模型下，星子的半径大概为公里量级。这样大小的星子和尘埃性质不同，它可以脱离气体
 的阻尼力并通过自引力保持其结构。此时星子相互之间的引力作用变得显著，它们会经过雪崩增长与
 寡头生长两个时期成长为原行星\cite{Greenberg1978,Kokubo1996,Rafikov2003,Lissauer1993}。原
-行星（Protoplanet，亦称做行星胚胎）会在接下来分别演化成气态巨行星和类地行星，其中形成气态巨行星一般被
-认为通过核吸积模型（core accretion）形成\cite{Mizuno1980,BodenheimerPollack1986,Pollack1996}，
+行星（protoplanet，亦称做行星胚胎）会在接下来分别演化成气态巨行星和类地行星，其中形成气态巨行星一般被
+认为原行星核通过吸积气体（core accretion）而形成\cite{Mizuno1980,BodenheimerPollack1986,Pollack1996}，
 而类地行星则需要经历更多的动力学作用过程才能形成\cite{Chambers1998}。
 
 当然，行星形成也还存在很多问题与挑战，解释太阳系太行星还存在许多难关
@@ -406,12 +407,12 @@ MMSN 气体盘的面密度拥有如下的幂率函数形式：
 系外行星种类遍布多样，堪称百花齐放，且已确认数量仍在日趋增加。抛开观测选择
 偏差（observational selection bias），太阳系与之相比似乎显得有些「格格不入」。 按
 照图\ref{fig:exomassper}，本文将系外行星按照其集中区域大致分为三类： 热木星族
-（椭圆实线），冷类木星族（方框实线）和超级地球族（椭圆虚线）。
+（椭圆实线），冷木星族（方框实线）和超级地球族（椭圆虚线）。
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/chapter1/fig13_exompplot.pdf}
-\caption{现今探测到系外行星的周期 --- 质量散点图。其中不同颜色分别代表不同的探测方法：青色代表视向速度法，灰色是凌星法，黄色指代微引力透镜法，红色代表直接成像法，紫色则表示其他方法。黑色字母 Me，V，E，Ma，J，S，U，N 则分别表示太阳系内水星，金星，地球，火星，木星，土星，天王星和海王星。本文将系外行星进行人为类别划分包络在封闭曲线内，分别为热木星族（椭圆实线），冷类木星族（方框实线）和超级地球族（椭圆虚线）。}
+\caption{现今探测到系外行星的周期 --- 质量散点图。其中不同颜色分别代表不同的探测方法：青色代表视向速度法，灰色是凌星法，黄色指代微引力透镜法，红色代表直接成像法，紫色则表示其他方法。黑色字母 Me，V，E，Ma，J，S，U，N 则分别表示太阳系内水星，金星，地球，火星，木星，土星，天王星和海王星。本文将系外行星进行人为类别划分包络在封闭曲线内，分别为热木星族（椭圆实线），冷木星族（方框实线）和超级地球族（椭圆虚线）。}
 \label{fig:exomassper}
 \end{figure}
 
@@ -425,9 +426,9 @@ MMSN 气体盘的面密度拥有如下的幂率函数形式：
 参见 \S \ref{chapter:data_stat}。
 
 
-\subsubsection{冷类木星族  Cold/Normal Jupiter Population}
+\subsubsection{冷木星族  Cold/Normal Jupiter Population}
 
-与轨道距离主星较近的热木星相对应有一类行星被称作冷类木星（或者常规类木星）。
+与轨道距离主星较近的热木星相对应有一类行星被称作冷木星（或者常规类木星）。
 此类行星在观测上拥有长于约一百天的轨道周期，有效温度也比热木星低得多，太阳
 系木星就属于一颗典型冷木星。相比短周期行星，确认此区域的行星通常需要望远镜
 连续观测几年甚至数十年，因而样本完备性也相对较差\cite{Cumming2008}。根据使用
@@ -439,20 +440,20 @@ MMSN 气体盘的面密度拥有如下的幂率函数形式：
 ，如 HR 8799 系统（文献\citen{Marois2008HR8799}，详见图\ref{fig:hr8799}）
 等屈指可数的样本。传统的核吸积模型需要花很长时间来形成此类气巨星的胚胎核心。
 相比之下，另辟蹊径的引力不稳定（Gravitational/Disk Instability，一般简称 GI ）模型
-\cite{Kuiper1951,Cameron1978,Boss1997}则可比较合理地解释这些巨行星是如何形于
+\cite{Kuiper1951,Cameron1978,Boss1997}则可比较合理地解释这些巨行星是如何形成于
 距离主星几十个天文单位的轨道上\cite{Durisen2007}。
 
 
 
 \subsubsection{超级地球族  Super-Earth Population}
 
-超级地球，又称迷你海王星（mini-Neptune），对于 RV 探测到的系外行星一般定义为
-介于十个地球质量与海王星质量之间。而对于凌星法探测到的行星，则其半径大约介于
+超级地球，有时又称迷你海王星（mini-Neptune），对于 RV 探测到的系外行星一般定义为
+介于十个地球质量与海王星质量之间，或者对于凌星法探测到的行星，则其半径大约介于
 二到四个地球半径\cite{Haghighipour2011}。在图\ref{fig:exomassper} 中，不难发现超级
 地球十分常见与 1 天至 100 天之间的轨道，Batalha 等人利用 $Kepler$ 前 16 个月的数据
 也推断超级地球为银河系最常见的行星类别\cite{Batalha2013}。
 
-那么超级地球的形成历史究竟何般？它们又是否可归至类地行星范畴呢？前面 \S 
+那么超级地球的形成历史究竟为何般？它们又是否可归至类地行星范畴呢？前面 \S 
 \ref{sec:clspftheory} 提到在核吸积模型下，气态巨行星首先会成长为约 10 
 $\tif{M}_\oplus$ 的固态核心后通过吸积气体而成长\cite{Guillot2005}。超级地球质量
 也正好估算为此值附近\cite{Lissauer2011MRR}，因而很自然的假设便是此类行星在
@@ -465,7 +466,7 @@ $\tif{M}_\oplus$ 的固态核心后通过吸积气体而成长\cite{Guillot2005}
 这些行星倾向于聚集在平运动共振（Mean Motion Resonance，简称 MMR）的内边缘，
 尤其是 3:2 和 2:1 平运动共振\cite{Fabrycky2014}。一时之间包括潮汐作用、共振结构
 等解释众说纷纭\cite{LithwickWu2012,Lee2013,Batygin2013,Baruteau2013,Delisle2014,Chatterjee2015}，
-到如今也尚未弄清其中的动力学机制，包括此现象是否依赖于超级地球的形成过程。
+到如今也尚未弄清其中的动力学机制，以及此现象是否依赖于超级地球的形成过程。
 
 \subsubsection{值得一提的行星系统}  \label{sec:pexample}
 %https://en.wikipedia.org/wiki/List_of_exoplanet_firsts
@@ -501,7 +502,7 @@ Ganymede 的构型堪称如出一辙。理论上，此类轨道构型很有可�
 \textbf{高偏心率系统} --- \textit{HD 80606}。  {}  作为偏心率最大的几个系统之一，HD 80606 拥有 0.93 
 的轨道偏心率\cite{Naef2001}，远心点居然是近心点距离的近三十倍。同属此类的系统还有 HD 4113
 \cite{Tamuz2008}，HD 80606 行星轨道法向和主星自转轴方向测量（spin-orbit measurement ）
-\cite{Pont2009}表明它们的起源很可能与 Lidov-Kozai 机制\cite{Lidov1962,Kozai1962}有着密切关联
+\cite{Pont2009}表明它的起源很可能与 Lidov-Kozai 机制\cite{Lidov1962,Kozai1962}有着密切关联
 \cite{Wu2003}，或许是热木星系统高偏心率迁移的证据（详见 \S \ref{sec:highemig}）。
 
 
@@ -526,7 +527,7 @@ b（周期为 8.5 小时\cite{SanchisOjeda2013}），Kepler-70 b（周期仅 5.8
 
 \textbf{其他诡怪系统} --- \textit{WASP-47}。 {}  该行星系统拥有一颗典型的热木星\cite{Hellier2012}，
 然而后续长期检测显示该系统有另外两颗小质量行星\cite{Becker2015,SanchisOjeda2015}以及一颗
-长周期冷类木行星\cite{NeveuVanMalle2016}。这和传统的认为热木星更倾向于成单的想法截然不同
+长周期冷木行星\cite{NeveuVanMalle2016}。这和传统的认为热木星更倾向于成单的想法截然不同
 \cite{Steffen2012}，并且即使与其他包含热木星的多行星系统相比，WASP-47 也大有不同（如图 
 \ref{fig:hjwcomp}），现有的理论并不能完全解释该系统的构型，因而更完善的形成理论与观测限制
 也更加迫在眉睫。
@@ -543,9 +544,11 @@ b（周期为 8.5 小时\cite{SanchisOjeda2013}），Kepler-70 b（周期仅 5.8
 数据处理、如何提高数据的精度（\S \ref{chapter:obs_red}）从而服务于后续行星探测以及原恒星盘
 搜索等科学目标（\S \ref{chapter:form_evo}）。
 
-另外，本文将于 \S \ref{chapter:data_stat} 章详细探讨系外热木星系统的统计性质，回顾解释这类行
+此外，本文将于 \S \ref{chapter:data_stat} 章详细探讨系外热木星系统的统计性质，回顾解释这类行
 星形成的困难之处。最后还包括如何利用轨道-自转不共面性（spin-orbit misalignment ）来限制这些
-系统的潮汐演化过程和参数，以及这些过程和参数蕴含或还原了哪些系统演化的物理效应。
+系统的潮汐演化过程和参数，以及这些过程和参数蕴含或还原了哪些系统演化的物理效应。在本文的
+最后一部分，将会总结与展望系外行星领域的未来计划。而如何从宏观层面研究行星系统的形成与演
+化以及从微观层面去细致描述行星的性质，这些研究将有利于击破现有的系外行星难关。
 
 
 \begin{figure}[t!]

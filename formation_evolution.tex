@@ -9,7 +9,7 @@
 行星盘\cite{Smith1981,Latter2017,Mosqueira2003}。早在 17 世纪初盘，笛卡尔为了解释太阳系的行星
 构型就引入了盘的概念，尽管那时候人类并未真正了解原恒星盘的模样\cite{Kawabe1993}。如今已迈入
 中年的太阳系依然尚有黄道尘埃盘\cite{Dermott1994}、主小行星带以及库依柏带星子盘，这些也都是太
-阳系纷乱的历史留下的残骸\cite{Dohnanyi1969}。
+阳系纷乱历史留下的残骸\cite{Dohnanyi1969}。
 
 
 \begin{figure}[b]
@@ -40,21 +40,26 @@
 \tif{B}_\nu (\tif{T}) = \frac{2h\nu^3}{c^2} \, \frac{1}{e^{h\nu / k\tif{T}}-1}
 \end{equation} \myequation{黑体辐射}
 
+\afterpage{
+\begin{savenotes}
 \begin{figure}[t!]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/chapter3/f3_youngdisc.pdf}
 \caption[AB Aurigae 系统理论谱能量分布图。从左至右分别表示恒星、有效温度为 1500 K 的星周内侧盘与外侧行星形成区域的黑体辐射组分。该图利用 Dullemond 开发的 CGPlus 程序制作。]{AB Aurigae 系统理论谱能量分布图。从左至右分别表示恒星、有效温度为 1500 K 的星周内侧盘与外侧行星形成区域的黑体辐射组分。此图利用 Dullemond 开发的 CGPlus 程序\footnotemark[1]制作。}
 \label{fig:transdiscsed}
+\setcounter{footnote}{1}
+\addtocounter{footnote}{+0}\footnotetext{链接 \url{http://www.mpia.de/homes/dullemon/radtrans/fitcgplus/}。}
 \end{figure}
-\footnotetext{链接 \url{http://www.mpia.de/homes/dullemon/radtrans/fitcgplus/}。}
+\end{savenotes}
+}
 
 同样，径向对称且几何薄的星周盘总辐射可看作每个环状细盘黑体辐射的积分叠加，形式如下：
 
 \begin{equation} \label{eq:diskrad}
-\tif{F}_\nu = \frac{\cos \theta}{\tif{D}^2} \, \int \tif{B}_\nu (\tif{T}_\tif{d}) \, ( 1-e^{-\tau} ) \, 2\pi r \tif{d} r \ ,  
+\tif{F}_\nu = \frac{\cos \theta}{\tif{D}^2} \, \int \tif{B}_\nu (\tif{T}_\tif{d}) \, ( 1-e^{-\tau} ) \, 2\pi r \,\tif{d} r \ ,  
 \end{equation} \myequation{多黑体盘总辐射量}
 其中 $\theta$ 为观测者的视角，D 为观测者和源之间的距离。光深 $\tau$ 与盘内尘埃的不透明度
-（Opacity）以及盘的面密度分布有关，因而上述公式所描述的星周盘谱能量分布（SED）函数是高度简并的函数。
+（opacity）以及盘的面密度分布有关，因而上述公式所描述的星周盘谱能量分布（SED）函数是高度简并的函数。
 
 %\begin{figure}[t]
 %\centering
@@ -113,7 +118,7 @@ ECL-11893 也被怀疑为掩食盘\cite{Dong2014}。下文，我们将利用 OGL
 者高斯轮廓的掩食光变曲线。在本文，我们则利用光变曲线中和这些普通情况不同的掩食形状来区分可
 能的掩食盘系统。这些结构包括不对称型（EE Cep 或 J1407，文献 
 \citen{Galan2012,Mamajek2012}），W-型掩食形状（$\epsilon$ Aurigae，文献 \citen{Guinan2002} ）
-或者宽平台型（如 OGLE-LMC- ECL-17782，文献 \citen{Graczyk2011}）。如果我们探测到此类特殊结
+或者宽平台型（如 OGLE-LMC- ECL-17782，文献 \citen{Graczyk2011}）。如果探测到此类特殊结
 构，我们则会将该系统标注为掩食盘候选体，尽管我们并未真正看到盘本身的旋转结构。
 
 
@@ -131,8 +136,8 @@ ECL-11893 也被怀疑为掩食盘\cite{Dong2014}。下文，我们将利用 OGL
 \item 计算掩食内光变曲线的斜度（Skewness）与峰度（Kurtosis）以及星等的分布统计值。
 \end{enumerate}
 
-我们并没有考虑低信噪比、观测点太少的光变曲线，因为此类系统的在食部分并不能被有效地识别出。
-这部分系统的斜度和峰度参数不能被很好的反演，从而造成成倍的额外掩食盘「假阳性」候选体。而如
+这里，我们并没有考虑低信噪比、观测点太少的光变曲线，因为此类系统的在食部分并不能被有效地识别出。
+这部分系统的斜度和峰度参数也不能被很好的反演，从而造成成倍的额外掩食盘「假阳性」候选体。而如
 何计算这些 EBs 系统掩食外的星等标准差以及识别进食（ingress）和出食（egress）粗略介绍如下：
 
 
@@ -143,13 +148,13 @@ ECL-11893 也被怀疑为掩食盘\cite{Dong2014}。下文，我们将利用 OGL
 \item 接下来计算整条光变曲线（掩食内以及掩食外）的中值（median value），并记作 $\mu_\tif{L}$。
 因为这边取的是中值，从而此值应大约为 EB 光变曲线掩食外的平均星等；
 
-\item 然后对整条光变曲线做宽度为五个点的点滑动平均（box smoothing），将最暗（星等值最大）的
+\item 然后对整条光变曲线进行宽度为五个点的滑动平均（box smoothing），将最暗（星等值最大）的
 点标记为主掩食甚（伴星遮挡主星面积最大的时刻），用 $\theta_\tif{p}$ 表示。而次掩食甚时刻 $
 \theta_\tif{s}$ 则定义为在 $\theta_i$ 处，$|m(\theta_i) - m(\theta_\tif{m})|$ 达到最大值，其中 $
 \theta_\tif{m}$ 等于 $(\theta_i+ \theta_\tif{p})/2$，而 $m(\theta)$ 为相位 $\theta$ 处的星等值；
 
-\item 选取在 $[\theta_\tif{m} - 0.05, \, \theta_\tif{m} + 0.05]$ （也即绝对相位宽度为 0.1）区间内计算这
-段光变曲线的标准差：$\sigma_\tif{L}$，也即掩食外光变曲线的弥散度；
+\item 选取 $[\theta_\tif{m} - 0.05, \, \theta_\tif{m} + 0.05]$ （也即绝对相位宽度为 0.1）区间，计算其
+内光变曲线的标准差：$\sigma_\tif{L}$，也即掩食外光变曲线的弥散度；
 
 \item 而光变曲线的主掩部分则定义为星等值比平均值低 $1\sigma$，即 $m > \mu_\tif{L} + \sigma_\tif{L}
 $ 并且区间内包含 $\theta_\tif{p}$. 同样的方法也可以定义包含 $\theta_\tif{s}$ 的次掩食部分。
@@ -163,7 +168,7 @@ $ 并且区间内包含 $\theta_\tif{p}$. 同样的方法也可以定义包含 $
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=1.0\textwidth,trim={0.4in 0.2in 0 0}]{figures/chapter3/f4_magerr.pdf}
-\caption{OGLE-III LMC EBs 样本 $i$ 波段星等与该波段掩食外的星等标准偏差散点图。为了着重显示高信噪比的系统，我们人为去除了 $i$ 波段星等大于 19.3 的 EBs。另外实线上侧的掩食外星等弥散度 $\sigma_\tif{L} > 0.1$ 也被舍去。另外，虚线表示 $\sigma_\tif{L} > \sigma_\tif{c} + 0.1 $，其中 $\sigma_\tif{c}$ 为极限星等误差。我们也尝试过该选择判据，结果显示两种方法并不能影响图 \ref{fig:lmcks} 中的实线方框内的点。}
+\caption{OGLE-III LMC EBs 样本 $i$ 波段星等与该波段掩食外的星等标准偏差散点图。为了着重显示高信噪比的系统，我们人为去除了 $i$ 波段星等大于 19.3 的 EBs。另外实线上侧的掩食外星等弥散度 $\sigma_\tif{L} > 0.1$ 也被舍去。此外，虚线表示 $\sigma_\tif{L} > \sigma_\tif{c} + 0.1 $，其中 $\sigma_\tif{c}$ 为极限星等误差。我们也尝试过该选择判据，结果显示两种方法并不能影响图 \ref{fig:lmcks} 中的实线方框内的点。}
 \label{fig:magerr}
 \end{figure}
 
@@ -183,7 +188,7 @@ m(\theta_\tif{p}) - \mu_\tif{L}| > 4 \sigma_\tif{L}$ 的系统，其中 $|m(\the
 \tif{L}$。之所以这样选取是因为当以上两个判据变得不那么严格时，最后的结果中会包含相当多的污染源
 以至于掩食盘候选体被淹没在其他系统中，这些系统并没有掩食盘而只是星等分布接近掩食盘系统。
 
-在主掩和次掩食内，星等分布的斜度 S 以及峰度 K 的计算公式如下：
+在主掩和次掩食内，星等分布的斜度 $S$ 以及峰度 $K$ 的计算公式如下：
 
 \begin{equation} \label{eq:skew}
 S =  \frac{1}{N} \sum_{i=0}^{N-1} \left(\frac{m_i - \mu}{\sigma_\tif{L}}\right)^3 
@@ -264,7 +269,7 @@ OGLE-LMC-ECL-11893（图 \ref{fig:lmc11893}）和 OGLE-LMC-ECL-17782（图 \ref{
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.98\textwidth,trim={0.0in 0.2in 0 0}]{figures/chapter3/f9_lmc11782.pdf}
-\caption[与图 \ref{fig:lmc02192} 相同，但为系统 OGLE-LMC-ECL-17782（$P=13.353\,\tif{d}$）。此系统为前人已识别的掩食盘候选体。由于该系统的掩食内星等分布同样拥有平台阶段，因而斜度与峰度值接近系统 OGLE LMC-ECL-11893（$S=0.12$，$K=0.89$）。可以从图中看到该系统拥有变化的掩食轮廓和深度。]{与图 \ref{fig:lmc02192} 相同，但为系统 OGLE-LMC-ECL-17782（$P=13.353\,\tif{d}$）。此系统为前人已识别的掩食盘候选体\cite{Graczyk2011}。由于该系统的掩食内星等分布同样拥有平台阶段，因而斜度与峰度值接近系统 OGLE LMC-ECL-11893（$S=0.12$，$K=0.89$）。可以从图中看到该系统拥有变化的掩食轮廓和深度。}
+\caption[与图 \ref{fig:lmc02192} 相同，但为系统 OGLE-LMC-ECL-17782（$P=13.353\,\tif{d}$）。此系统为前人已识别的掩食盘候选体。由于该系统的掩食内星等分布同样拥有平台阶段，因而斜度与峰度值接近系统 OGLE-LMC-ECL-11893（$S=0.12$，$K=0.89$）。可以从图中看到该系统拥有变化的掩食轮廓和深度。]{与图 \ref{fig:lmc02192} 相同，但为系统 OGLE-LMC-ECL-17782（$P=13.353\,\tif{d}$）。此系统为前人已识别的掩食盘候选体\cite{Graczyk2011}。由于该系统的掩食内星等分布同样拥有平台阶段，因而斜度与峰度值接近系统 OGLE-LMC-ECL-11893（$S=0.12$，$K=0.89$）。可以从图中看到该系统拥有变化的掩食轮廓和深度。}
 \label{fig:lmc11782}
 \end{figure}
 
@@ -281,7 +286,7 @@ OGLE-LMC-ECL-11893（图 \ref{fig:lmc11893}）和 OGLE-LMC-ECL-17782（图 \ref{
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.98\textwidth,trim={0.0in 0.2in 0 0}]{figures/chapter3/f10_lmc17138.pdf}
-\caption{与图 \ref{fig:lmc02192} 相同，但为系统OGLE LMC-ECL-17138（$P = 11.1 \tif{d}$）。它是在 图 \ref{fig:lmcks} 实线框中的唯一的污染源。此系统拥有与掩食盘候选体 OGLE-LMC-ECL-11893 与 OGLE-LMC-ECL-17782 类似的掩食内星等分布斜度与峰度统计值（$S=-0.36$ and $K=-0.02$），这是由系统的掩食深度变化所导致的。}
+\caption{与图 \ref{fig:lmc02192} 相同，但为系统OGLE-LMC-ECL-17138（$P = 11.1 \tif{d}$）。它是在 图 \ref{fig:lmcks} 实线框中的唯一的污染源。此系统拥有与掩食盘候选体 OGLE-LMC-ECL-11893 与 OGLE-LMC-ECL-17782 类似的掩食内星等分布斜度与峰度统计值（$S=-0.36$ and $K=-0.02$），这是由系统的掩食深度变化所导致的。}
 \label{fig:lmc17138}
 \end{figure}
 
