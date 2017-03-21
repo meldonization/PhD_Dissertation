@@ -4,8 +4,8 @@
 
 在引言部分 \S \ref{sec: exopftheory}，我们曾提到在如今已探测的系外行星中，有一群周期
 小于十天却拥有大于土星质量的行星种群，被称为热木星\footnote{若按照热木星的定义，
-其准确叫法应为近距离类木星，因为行星的有效温度不仅仅与主星的距离有关，而且还与主
-星的有效温度有关。}。为了研究此类行星的统计性质，本文汇总了知名的四大系外行星数据
+其准确叫法应为短周期类木星，因为行星的有效温度不仅仅与主星的距离有关，而且还与主
+星的有效温度有关。}。为了研究此类行星的统计性质，本文汇总了现有的四大系外行星数据
 库网站 \url{http://exoplanets.eu/}、\url{http://exoplanets.org/}、\url{http://
 exoplanetarchive.ipac.caltech.edu/} 和 \url{http://openexoplanetcatalogue.com/} ，并整理出
 比较统一规范的系外行星列表\footnote{\url{https://github.com/EXONJU/ExoPlanetList}}。如
@@ -18,7 +18,7 @@ exoplanetarchive.ipac.caltech.edu/} 和 \url{http://openexoplanetcatalogue.com/}
 \begin{figure}
 \centering
 \includegraphics[width=1.0\textwidth]{figures/chapter4/fig2_HRplanet.pdf}
-\caption{已确认系外行星的色指数与光度分布图，墨蓝色点为伊巴古星表临近太阳 150 pc 以内的恒星（图 \ref{fig:hrdiagram}），红五角星为太阳，绿色与黄色点如图 \ref{fig:exoskydist}，被探测到的系外行星以及热木星明显集中在类太阳恒星附近，为观测选择效应。}
+\caption{已确认系外行星的色指数与光度分布图，墨蓝色点为伊巴古星表临近太阳 150 pc 以内的恒星（图 \ref{fig:hrdiagram}），红五角星为太阳，绿色点为所有行星，黄色点则为热木星。如今被探测到的系外行星以及热木星明显集中在类太阳恒星附近，为观测选择效应。}
 \label{fig:hrplanet}
 \end{figure}
 
@@ -26,7 +26,7 @@ exoplanetarchive.ipac.caltech.edu/} 和 \url{http://openexoplanetcatalogue.com/}
 \begin{figure}
 \centering
 \includegraphics[width=1.0\textwidth]{figures/chapter4/fig1_exodistmollweide.pdf}
-\caption{已被确认的系外行星在赤道坐标下的天球分布。图中蓝色虚线为银道面，可以看到巡天一般会远离银盘面（CoRoT 与 OGLE 除外）。绿色点为所有行星，黄色点则为热木星，点大小正比于 V 波段星等，从此图未见南北天的观测选择效应，$Kepler$ 视场（RA=19h 22m 40s，Dec=+44$^\circ$ 30' 00'' ）为已确认系外行星最密集的区域之一。}
+\caption{已被确认的系外行星在赤道坐标下的天球分布。图中蓝色虚线为银道面，可以看到巡天一般会远离银盘面（CoRoT 与 OGLE 除外）。绿色与黄色点如图 \ref{fig:hrplanet}，点大小正比于 V 波段星等，从此图未见南北天的观测选择效应，$Kepler$ 视场（RA=19h 22m 40s，Dec=+44$^\circ$ 30' 00'' ）为已确认系外行星最密集的区域之一。}
 \label{fig:exoskydist}
 \end{figure}
 
@@ -35,14 +35,14 @@ exoplanetarchive.ipac.caltech.edu/} 和 \url{http://openexoplanetcatalogue.com/}
 
 按照已有的数据，现今探测到的 HJ 总数目约占已确认行星的 10\% 之多，这也是为什么
 在图 \ref{fig:exomassper} 中，明显可以观察到一群质量在木星质量周期小于十天的行星
-族。然而这与观测的选择效应密不可分。一个完备的统计必须建立在限定体积样本（
+族。然而这与观测的选择效应密不可分：一个完备的统计必须建立在限定体积样本（
 Volumn-limited sample）之上（文献 \citen{WinnFabrycky2015}）。在一个限定体积的样
-本中，热木星出现的概率并不高。Cumming 等人于 2008 年对 RV 巡天中的 600 颗 FKGM 
-恒星监测了 8 年后的结果显示\cite{Cumming2008}，对于 $M_\tif{p} > 100 \tif{M}_\oplus,\, 
-P<5.5$ years 的行星的出现概率可用如下公式描述：
-
+本中，热木星出现的概率实则并不高。Cumming 等人于 2008 年对限定体积 RV 巡天中的 600 
+颗 FKGM 恒星监测了 8 年后的结果显示\cite{Cumming2008}，对于
+ $M_\tif{p} > 100 \tif{M}_\oplus,\, P<5.5$ years 的行星的出现概率可用如下公式描述：
+ 
 \begin{equation} \label{eq:pltoccurate}
-\frac{\tif{d} N}{\tif{d}\ln M_\tif{p} \tif{d}\ln P} \propto  M_\tif{p}^\alpha P^\beta \ \, ,
+\frac{\tif{d} N}{\tif{d}\ln M_\tif{p} \,\tif{d}\ln P} \propto  M_\tif{p}^\alpha \,P^\beta \ \, ,
 \end{equation} \myequation{系外行星数目的出现概率分布}
 其中指数 $\alpha = -0.31 \pm 0.20 $，$\beta = 0.26 \pm 0.10$。结合其他种类的巡天项目，
 对应的 HJs 的出现概率大致为 0.5 \% 到1.5 \% 之间不等\cite{Howard2012,Marcy2005,
@@ -58,9 +58,9 @@ Santos2004,Fischer2005,Udry2007,Sozzetti2009,Sousa2011}，这也恰好佐证了 
 在传统的核吸积模型中\cite{IdaLin2004b}，气巨星往往需要在距离主星几个天文单位的地方
 才能有足够多的原材料（绝大部分由冰组成）供固态核形成。然而在观测中，HJs 的统计
 分布于 3 天附近存在峰值（见图 \ref{fig:hjperecc}）。因此需要解释 HJ 的形成，大致上有
-两大种方法：在传统的行星形成基础上引入木星的轨道迁移（\textit{orbital migration}）或
-直接于当地形成（\textit{in situ. formation}）。关于热木星的本地形成请参见文献 
-\citen{Batygin2016,Boley2016}，本文分析的主要讨论对象为前者。
+两大种途径：在传统的行星形成基础上引入木星的轨道迁移（\textit{orbital migration}）或
+直接于当地形成（\textit{in situ. formation}）。关于热木星的本地形成理论请参见文献 
+\citen{Batygin2016,Boley2016}，本文分析的主要讨论对象主要基于前者。
 
 \begin{figure}[t]
 \centering
@@ -100,7 +100,7 @@ r_H = \big( \frac{M_\tif{p}}{3M_\tif{s}} \big) ^{1/3}
 如果行星的质量足够大，使得希尔半径大于盘的标高（$r_H > h$），那么盘可能被被打开缺
 口。与此同时，由于气体盘的粘性，此缺口也可能被气体重新填上。1986 年，Lin 等人通过
 比较盘缺口由于粘性重新被填补上以及由于 Lindblad 共振又再被打开的时标，得出在经典的
-原行星盘参数下，木星质量的行星足以打开空缺，而土星的质量则约为打开空缺的临界值
+原行星盘参数下，一个木星质量的行星就足以打开空缺，而土星则处于打开空缺的临界质量
 \cite{Lin1986,Ward1997}。后来该理论被成功地在人类发现的第一颗类太阳系外 HJ --- 51 Peg
  b 上\cite{Lin1996}，比如在 5 AU 附近的木星，在标准的行星盘打开缺口后，将在时标为 0.5 
  Myr 左右迁移至原行星盘的内边界。这样的气体盘迁移又被称作第二型（Type II）轨道迁移
@@ -138,7 +138,7 @@ Naoz2011,Nagasawa2011}。甚至在恒星形成的星团环境中，其它天体�
 不稳定，那么可能发生行星---行星散射（planet-planet scattering 简称 PPS，参见文献
 \citen{Rasio1996a}）。对于一般有规律并排（orderly spaced）的行星系统，动力学作用
 会产生中等偏心率的行星\cite{Zhou2007,IdaLin2013,Lin1997,Juric2008,Chatterjee2008}，
-而若要产生能够形成 HJs 的大偏心率，则需要长期作用下的混动效应\cite{Wu2011}。
+而若要产生能够形成 HJs 的大偏心率，则需要长期作用下的混沌效应\cite{Wu2011}。
 
 另外，形成热木星高偏心率还有一些混合以上盘迁移以及高偏心率迁移的其他理论，详见
 文献\citen{Weidenschilling1996,Nagasawa2008,Chen2013}。理论虽多，但迁移的总体思
@@ -174,20 +174,22 @@ U(r) = \sum\limits_{l=2}^\infty \sum\limits_{p=0}^l\sum\limits_{q=-\infty}^\inft
 \label{fig:tideillu}
 \end{figure}
 
-在上面描述的基础上，如果将潮汐展开精确到二阶（$l=2$），并且取角向模数$m,n = 0 $，
+在上面描述的基础上，如果将潮汐展开精确到二阶（$l=2$），并且取角向模数$p,q = 0 $，
 便可得到最常用的平衡潮汐（equilibrium tide）模型的近似解。此时形变天体可以用常数滞
 后角度（constant phase lag）或滞后时间来参数化描述复杂的潮汐模型：
 
 \begin{equation} \label{eq:eqtide}
 Q^{-1}=\frac{1}{2\pi E_0} \oint \big( -\frac{\tif{d} E}{\tif{d} t}\big)\,\tif{d} t = \tan 2\delta \ ,
 \end{equation} \myequation{平衡潮汐模型下的 $Q$ 参数}
+其中 $Q$ 为潮汐的能量耗散无量纲参数因子，$E$ 与 $E_0$ 分别为系统的当前能量以及初始能量，
+$\delta$ 则为上述常数滞后角。
 
 Goldreich 和 Soter 于 1966 年将上述模型用在计算太阳系内行星的潮汐耗散率中
 \cite{Goldreich1966}，同样的理论也用在近距离双星潮汐演化中\cite{Hut1981,Zahn1977}。
-对于系外行星而言，HJs 的产生和演化包括两个过程：行星的轨道圆化（circularization）
+对于系外行星而言，HJs 的产生和演化包括两个过程：两者轨道圆化（circularization）
 以及两个天体的轨道自转同步过程（synchronization）。其中每个过程恒星与行星的物质
-组成以及内部结构都会影响能量耗散和角动量交换效率，在弱摩擦假设下的平衡潮汐模型
-则采用 $Love$ 数 $k_2$ 来描述不同的物质耗散结构。
+组成以及内部结构都会影响能量耗散和角动量交换的效率，在弱摩擦假设下的平衡潮汐模型
+通常额外引入 $Love$ 数 $k_2$ 来描述不同物质结构的耗散率。
 
 
 \section{Rossiter-McLaughlin 效应} \label{sec:rmeffect}
@@ -209,7 +211,7 @@ Rossiter-McLaughlin 效应（RM 效应）最早可能是被 Holt 于 1893 年预
 \Delta V_\tif{RM} = (R_\tif{p} / R_\tif{s})^2 \sqrt{(1-b^2)} \, v\sin i
 \end{equation} \myequation{Rossiter-McLaughlin 效应产生的视向速度波动振幅}
 其中 $(R_\tif{p} / R_\tif{s})^2$ 约为凌星深度，$b$ 为凌星最大时刻两天体之间的距离影响
-因子，$v\sin i$ 为主星的空间投影自转速度。图 \ref{fig:rmsim} 所示为不同的 $b$ 与 
+因子，$v\sin i$ 为主星的视向投影自转速度。图 \ref{fig:rmsim} 所示为不同的 $b$ 与 
 $\lambda$ 参数下恒星视向速度的理论波动，$\lambda$ 在系外行星领域被称作投影行星
 轨道法向与恒星自转轴夹角（后文统称自转---公转夹角），为观测测量可拟合量。前文
 提到的 $\Psi$ 则为真实的自转--公转夹角，并且本文定义 $0 \leq |\Psi | < 90^\circ$ 为
@@ -234,7 +236,7 @@ $\lambda$ 参数下恒星视向速度的理论波动，$\lambda$ 在系外行星
 
 \section{热木星的自转轨道倾角}   
 
-在已发现的约 370 颗 HJs 系统中，大约有 100 颗拥有 RM 效应的测量
+在已发现的约 370 颗 HJs 系统中，大约有 100 颗拥有 RM 效应测量数据
 \footnote{\url{http://www.astro.keele.ac.uk/jkt/tepcat/rossiter.html}}。在 \S \ref{sec:migration} 
 中，我们曾提到 HJs 两种主要形成机制气体盘迁移与高偏心率迁移。而这两种形成过程能够产
 生截然不同的自转---公转夹角分布。对于传统的盘迁移模型，行星的轨道处于盘的平面内，而
@@ -242,13 +244,13 @@ $\lambda$ 参数下恒星视向速度的理论波动，$\lambda$ 在系外行星
 然，在一些特殊情况下 $\Psi$ 也可能被激发，比如：恒星形成后期湍动分子云的内流导致盘平
 面改变\cite{Bate2010}、磁场---星周盘作用\cite{Lai2011}以及伴星的扰动\cite{Lai2014}。在绝大
 部分情况下 $\Psi$ 值应当比较小。相比之下，高偏心率迁移理论（如 Lidov-Kozai 效应）中，
-由于伴星的扰动，类木星的轨道倾角则会与偏心率一共大幅度震荡。这样 $\Psi$ 的期望值则应
+由于伴星的扰动，类木星的轨道倾角则会与偏心率一并大幅度震荡。这样 $\Psi$ 的期望值应
 该在 $[0^\circ,\,180^\circ]$ 之间随机分布。
 
 随着越来越多 HJs 的 RM 效应被探测到，这两种理论也看似总算得以被区分开。Winn 等人于 2011 
-年发表了一篇对凌星 HJ 系统 RM 效应统计结果显示：类太阳恒星（GKM Type，$T_\tif{eff} \lesssim 
+年发表了一篇对凌星 HJ 系统 RM 效应统计结果显示：类太阳恒星（GK type，$T_\tif{eff} \lesssim 
 6250 $ K）周围测量得到的 $\lambda \sim 0$。与之对应的，在偏热 F 型主星（$T_\tif{eff} \gtrsim 
-6250 $ K） 行星系统中，观测到的 HJs 轨道---自转投影倾角 $\lambda$ 在 0 到 $\pi$ 之间几乎均
+6250 $ K） 的行星系统中，观测到的 HJs 轨道---自转投影倾角 $\lambda$ 则在 0 到 $\pi$ 之间几乎均
 匀分布，甚至还包括一些逆行的轨道（文献 \citen{Winn2010}，另参见图 \ref{fig:hjobliq}）。Albrecht 
 随后便给出解释：由于有效温度较低的恒星拥有最外表的对流层，因而它们的潮汐因子 $Q$ 较小，因
 此能有效的降低 $\Psi$ 角\cite{Albrecht2012}，当然前提便是初始的 $\Psi$ 角随机分布（也因此说明
@@ -257,7 +259,7 @@ HJs 更倾向于通过高偏心率迁移模型形成）。
 而对于 Albrecht 等使用的潮汐模型，正如前文（\S \ref{sec:tidal}）所提到的，其中 $Q$ 值的引入是
 一个参数化的模型。这样的模型依赖于类太阳恒星内部对流包层的「混合长」湍动粘滞理论，是通过
 不同星团中双星的圆化时标来估算得出\cite{Zahn1977,Mathieu1994}，因而模型对类太阳的潮汐耗散
-率会由于对流层的存在而被显著增大（中等质量恒星的外表则为辐射包层）。在这样的平衡潮汐模型
+率会由于对流层的存在而显著地增大（中等质量恒星的外表则为辐射包层）。在这样的平衡潮汐模型
 下，假设潮汐鼓包处于平衡态之内，那么 $\Psi$ 以及 $\Omega_\tif{s}$ 将会以相同的速率演化。而潮
 汐演化通常引来行星半长径 $a$ 的演化。对于低质量恒星，其周围的木星公转轨道角速度 $n=2\pi/P 
 > \Omega_\tif{s}$，因此木星将会转移角动量给主星，因而轨道会内迁。在 Albrecht 等人的理论中，
@@ -315,7 +317,7 @@ $\Omega_\tif{s}/n$ 的特定取值下，$\Psi$ 可在轨道几乎不变的同时
 量的系外行星。
 \item 该行星系统的宿主恒星必须有较好的质量 $M_\tif{s}$、半径 $R_\tif{s}$、有效温度 $T_\tif{eff}$ 以及
 投影自转速度 $v \sin i$ 的测量。
-\item 每个上述物理量 $\xi$ 需要拥有小于一半的测量误差，即 $\Delta \xi  \leq 0.5 \, \xi$。
+\item 每个上述物理量 $\xi$ 需要拥有小于它测量值一半的误差，即 $\Delta \xi  \leq 0.5 \, \xi$。
 \end{enumerate}
 
 以上挑选后的数据在图 \ref{fig:perteff} 中被分成四种不同的类别：较热恒星（$T_\tif{eff} > 6250 $ K）、
@@ -333,11 +335,11 @@ $\Omega_\tif{s}/n$ 的特定取值下，$\Psi$ 可在轨道几乎不变的同时
 \label{tbl:stat}
 \begin{tabularx}{0.9\textwidth}{@{\extracolsep{\fill}}lcc}
 \toprule
-  &  Mean $v \sin i $ [km/s]  & Number of systems \\ \midrule 
-HS (Hot star, Short period planet) & 16.7       & 38                \\ 
-HL (Hot star, Long period planet) & 11.5       & 12                 \\ 
-CS (Cold star, Short period planet) & 4.5        & 129               \\ 
-CL (Cold star, Long period planet) & 2.9        & 196                \\ \bottomrule
+Regimes &  Mean $v \sin i $ [km/s]  & Number of systems \\ \midrule 
+Hot star, Short period planet   & 16.7       & 38                \\ 
+Hot star, Long period planet    & 11.5       & 12                 \\ 
+Cold star, Short period planet & 4.5         & 129               \\ 
+Cold star, Long period planet  & 2.9        & 196                \\ \bottomrule
 \end{tabularx}
 \end{table}
 }
@@ -349,7 +351,7 @@ CL (Cold star, Long period planet) & 2.9        & 196                \\ \bottomr
 转角动量为
 
 \begin{equation} \label{eq:spinam}
-J_{*,\,\tif{spin}} \equiv S = \gamma_\tif{s} M_\tif{s} R_\tif{s}^2 \Omega_\tif{s} \ ,
+S = \gamma_\tif{s} M_\tif{s} R_\tif{s}^2 \Omega_\tif{s} \ ,
 \end{equation} \myequation{恒星的自转角动量}
 其中 $\gamma_\tif{s}$ 为恒星转动惯量系数。行星的轨道角动量则为 $L = M_\tif{p}na^2$（参见
 公式 \ref{eq:2bam}）。在潮汐力矩的作用下，整个系统的总角动量（$S+L$）守恒，因此可以得
@@ -375,7 +377,7 @@ Eggleton1998,Ogilvie2004}）。典型的潮汐演化时标则为：
 \left( {a \over R_\tif{s}}\right)^5 \left( {P \over 2 \pi} \right) 
 \end{equation} \myequation{典型的潮汐演化时标}
 
-在方程 \label{eq:taue} 中，一般会采用 Goldreich 与 Stoer 的潮汐参数记号 $Q_\tif{s}^\prime \equiv 3 
+在方程 \ref{eq:taue} 中，一般会采用 Goldreich 与 Stoer 的潮汐参数记号 $Q_\tif{s}^\prime \equiv 3 
 Q_\tif{s}/2k_2$，其中 $k_2 =1.5/(1+{\tilde \mu})$，且 ${\tilde \mu} = 19 \mu/(2 \rho_\tif{s} 
 g_\tif{s} R_\tif{s})$ 为等效刚性系数, $\mu$，$\rho_\tif{s}$ 和 $g_\tif{s}$ 则分别为主星的刚性系数、
 密度以及表面重力。
@@ -402,8 +404,8 @@ Zahn1977,Goldreich1989,Penev2007}、内部结构\cite{Terquem1998,Goodman2009}�
 观测中，大部分围绕低质量低温慢速自转类太阳恒星的 HJs 都满足 $n>\Omega_\tif{s}$，也即它们的
 公转同步自转半长径 $a_\tif{cr} = (GM_\tif{s}/\Omega_\tif{s}^2)^{1/3} = (GM_\tif{s}R_\tif{s}^2/V_\tif{s}^2)^{1/3}$，
 加上符号后，$\tau_a (<0)$，$\tau_\Omega (>0)$ 以及$\tau_\Psi (<0)$ 分别对应于轨道收缩，恒星自
-转加速和轨道自转同向。在这样的极限下 $f_a$, $f_\Omega$ and $f_\Psi$ 均趋近于单位一，与之对应
-的角动量比值 $L/2S$ 可从小于一取值到大于一。
+转加速和轨道自转同向。在这样的极限下 $f_a$, $f_\Omega$ 和 $f_\Psi$ 均趋近于单位一，与之对应
+的角动量比值 $L/2S$ 可从零取值到一。
 
 进一步延伸公式 \ref{eq:ttimescale} 后，可以得到对于快速自转的主星（$L<2S$）周围的行星轨道会
 在自转---公转夹角演化前便显著收缩（$\tau_a < \tau_{\Omega},\tau_\tif{s}$）。若要使得这部分在它
@@ -429,12 +431,12 @@ Q_\tif{s}^\prime < Q_{\rm spin} \equiv {9 G M_\tif{s} \tau_\tif{s}
 \over 4 \gamma_\tif{s} R_\tif{s}^2 V_\tif{s}} 
 \left( {M_\tif{p} \over M_\tif{s}} \right)^2 
 \left({R_\tif{s} \over a} \right)^{6}.
-\end{equation} \myequation{恒星自转演化所需求的平衡潮参数}
+\end{equation}\myequation{恒星自转演化所需求的平衡潮参数}
 这里的 $Q_{\rm spin} $ 为过去主星自转（以及自转---公转夹角）的平衡潮演化参数，其中公式 \ref{eq:qorbit} 
-与公式 \ref{eq:qspin} 之间满足关系 $Q_{\rm spin} = L/2S Q_{\rm orbit}$。
+与公式 \ref{eq:qspin} 之间满足关系 $Q_{\rm spin} = (L/2S) Q_{\rm orbit}$。
 
 对于满足 $L< 2S$ 的系统，它们不可能在 HJs 的轨道不显著内缩的同时，对主星的自转速度以及自转轴
-取向造成可观的该变量。相反当 $L>2S$时，我们便可找到对应的 $Q_\tif{s}^\prime $ 来同时满足公式 
+取向造成可观的改变量。相反当 $L>2S$时，我们便可找到对应的 $Q_\tif{s}^\prime $ 来同时满足公式 
 \ref{eq:qorbit} 与公式 \ref{eq:qspin} ，也即 $Q_{\rm orbit} < Q_\tif{s}^\prime < Q_{\rm spin}$。在此范围
 内热木星公转法向与主星自转轴方向可被潮汐趋同化。需要说明的是，这里的条件和真实的恒星 $Q$ 值并
 不相关。
@@ -479,7 +481,7 @@ $\Omega_\tif{s} > n$）则会膨胀，且这些快速自转系统的 $\Psi$ 值�
 影响是不自洽的\cite{Rogers2013,Li2016}。
 
 同样这些系统的  $Q_\tif{orbit}$ 与 $Q_\tif{spin}$ （公式 \ref{eq:qorbit} 和 \ref{eq:qspin}）也被对应地画在
-图 \ref{fig:hotqq} 中：黑色点 --- $\Psi < 30^\circ$，黑色空心点 --- $\Psi > 30^\circ$ 以及灰色点标注的没有
+图 \ref{fig:hotqq} 中：黑色点（$\Psi < 30^\circ$），黑色空心点（$\Psi > 30^\circ$）以及灰色点标注的没有
 测量数据的系统。不失一般性，我们采取 $\tau_\tif{s} \sim \tau_\odot = 4 $ Gyr，以及 $\gamma_\tif{s} = 0.2$
 不同恒星这些值可那个会有所差别，但是并不会让它们穿越对角线（$Q_\tif{orbit} = Q_\tif{spin}$）。
 
@@ -503,7 +505,7 @@ $\Omega_\tif{s} > n$）则会膨胀，且这些快速自转系统的 $\Psi$ 值�
 \citen{Skumanich1972,Soderblom1983} 中的经验公式来定量描述，具体形式如下
 
 \begin{equation} \label{eq:wind}
-V_\tif{s} \simeq  V_0 \bigg( \frac{t}{t_0} \bigg)^{-1/2}
+V_\tif{s} \simeq  V_0 \,\big( \frac{t}{t_0} \big)^{-1/2}
 \end{equation} \myequation{类太阳恒星在星风作用下的自转速度损失率}
 这里的 $t_0$ 与 $V_0$ 在本文分别取为 $\simeq$1 Gyr 与 $\simeq$ 4 km s$^{-1}$。在星风与潮汐的同时
 作用下\cite{DobbsDixon2004,Dawson2014}，对恒星自转速度影响的总效应则为：$\dot{\Omega}_\tif{s} 
@@ -523,7 +525,7 @@ $\dot{\Omega}_\tif{s, w} = -\Omega_\tif{s}^3 R_\tif{s}^2/2 t_0 V_0^2$。星风�
 假使 $f_a$, $f_\Omega$ 和 $f_\Psi$ 接近单位一，那么不管是初始自转快过公转（$L<2S$）的系统还是
 相反的（$L>2S$）均可达到上述自转公转平衡态 $L=2S$ 或者 $\Omega_\tif{s} = 2\pi /P_\tif{orb}$，前提是
 行星初始在公转自转同步半长径之内；即使对于 $f_a$, $f_\Omega$ 和 $f_\Psi$ 不接近于一的状况，我们
-发现只要初始行星在该半长径之外，也可以达到该平衡态。因此无论如何，公式 \label{eq:lmeq} 都将带来
+发现只要初始行星在该半长径之外，也可以达到该平衡态。因此无论如何，公式 \ref{eq:lmeq} 都将带来
 两种最终的状态，即自转公转平衡态或者行星坠毁于主星之内。
 
 \begin{figure}[t]
@@ -533,7 +535,7 @@ $\dot{\Omega}_\tif{s, w} = -\Omega_\tif{s}^3 R_\tif{s}^2/2 t_0 V_0^2$。星风�
 \label{fig:coldevo}
 \end{figure}
 
-虽然有了公式 \label{eq:lmeq} 来定定义最终星风、潮汐的合并演化态，但是某些年轻的恒星也许并不能达到
+虽然有了公式 \ref{eq:lmeq} 来定定义最终星风、潮汐的合并演化态，但是某些年轻的恒星也许并不能达到
 上述状态。该时间在量级上约为 $t_0(V_0/V_e)^2$，因而对于这部分低质量恒星而言，既需要满足能够使得
 他们演化至平衡态（特别是 $\Psi$ 角的演化），而且还要保证周围的行星能够被我们观测到。故从公式 
 \ref{eq:qspin} 出发，我们重新定义了自转状态的潮汐演化临界值如下：

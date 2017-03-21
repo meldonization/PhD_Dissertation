@@ -19,7 +19,7 @@
 
 再者，利用已知行星系统去寻找发现质量更小的超级行星也十分有趣。类似 WASP-47 这样的系统
 在观测中又究竟还有多少遗漏，而小质量行星的信号到底会不会被掩埋在已存在巨行星的 RV 信号
-中呢？这些问题必须得利用多观测手段同时查漏来解答，比如 \textit{Gaia} 卫星的天体测量数据可
+中呢？这些问题必须得联合利用多观测手段同时查漏来解答，比如 \textit{Gaia} 卫星的天体测量数据可
 用来解除拟合参数中轨道倾角 $i$ 与真实质量的简并\cite{Gaia2016}，并且在探测一些处于共振的
 行星系统也有独特的优势\cite{Wu2016}。
 
@@ -76,7 +76,7 @@ R \propto \left\{
 演化有着至关重要的作用。一些研究显示不同的质量以及金属丰富的主星会对其中行星出现的概率
 和质量其决定性因素\cite{Fischer2005}，比如 M 型矮星周围的气巨星形成率会偏低，而类地行星则
 正好相反\cite{Johnson2007b,Cumming2008,Kennedy2008}，而随着恒星质量的增加大质量行星出
-现的概率也会偏大，比如对于巨星和亚巨星分支，这类恒星周围更容易看到大质量行星\cite{Johnson2007}。
+现的概率也会偏大，比如对于巨星和亚巨星分支，这类恒星周围更容观测到大质量行星\cite{Johnson2007}。
 但与此同时，巨星周围的短周期热木星出现的概率却又偏少（共 99 个系外行星处于巨星周围，其中
 周期小于 10 天的却只有 2 颗\footnote{\url{https://www.lsw.uni-heidelberg.de/users/sreffert/giantplanets/giantplanets.php}}）。
 这很可能是因为主星半径膨胀后潮汐作用将行星吞噬后的演化结果\cite{Sato2008,LilloBox2016}。
@@ -119,28 +119,27 @@ R \propto \left\{
 
 当今的科学是一项重任，取之于民同时用之于民。全民参与以为着新的时代已经悄然到来（Citizen 
 Science），其中 Zooniverse\footnote{\url{https://www.zooniverse.org}} 旗下的 Planet Hunters 已经
-发表了十二篇文章，包括第一篇被认证的系外行星（参见文献 \citen{Schwamb2013} ）。更多人提供
+发表了十二篇文章，包括第一篇被认证的系外行星（参见文献 \citen{Schwamb2013} ）。更多计划也提供
 了额外能够让人们参与进来的提议，包括命名系外行星\footnote{\url{http://nameexoworlds.iau.org/}}
 以及其它越来越丰富的可能性\cite{Hessman2010,Marshall2015}。在软件层面，整合源代码网站 
 ASCL\footnote{\url{http://ascl.net/}} 以及越来越多建立在 Python 之上的开发工具也在极大程度上降低
-了数据分析的门槛，如 Astropy \footnote{\url{http://www.astropy.org/}} 与 
+了数据分析的门槛，如 Astropy\footnote{\url{http://www.astropy.org/}} 与 
 Rebound\footnote{\url{https://github.com/hannorein/rebound}}。
 
 另外利用机器学习（machine learning）分析以及深度挖掘数据（data mining）也将会在天文领域有
 相应的一席之地\cite{Ball2010,McCauliff2015,Thompson2015}。若要结合大数据（big data）来反馈
-到系外行星领域，星族合成方法（Population Synthesis ）也许是最能够还原众多系外行星集体性质
+到系外行星领域，星族合成方法（population synthesis ）也许是最能够还原众多系外行星集体性质
 与演化的途径之一\cite{Benz2014,Mordasini2009}。
 
 \section{细致刻画单个系统}
 
 随着样本的增多，统计结果越来越丰富。然而如若想清楚地知道行星是否可能存在生命，我们还得通
-过研究刻画单个系统的宜居性来得出结论。在 HEC 列表
-\footnote{\url{http://phl.upr.edu/projects/habitable-exoplanets-catalog}}中，总共也列出约 50 颗的潜
-在宜居住行星（habitable exoplanets），那么我们究竟该如何定义宜居性\cite{Kasting1993}，而宜居
-性又是否与行星本身的质量、温度、大气与液态水、其他行星以及主星的活动之间（尤其是 M 型恒星）
-有必然关联\cite{Kasting2003,Segura2005,Scalo2007}？其中包括对距离我们最近的行星系统 Proxima 
-Centauri b 的主星、伴星、行星性质以及其间的空间天气环境对宜居性的讨论（参见 
-\citen{AngladaEscude2016} 以及其引用文献）。
+过研究刻画单个系统的宜居性来得出结论。在 HEC 列表\footnote{\url{http://phl.upr.edu/projects/habitable-exoplanets-catalog}}
+中，总共也列出约 50 颗的潜在宜居住行星（habitable exoplanets），那么我们究竟该如何定义宜居性
+\cite{Kasting1993}，而宜居性又是否与行星本身的质量、温度、大气与液态水、其他行星以及主星的活
+动之间（尤其是 M 型恒星）有必然关联\cite{Kasting2003,Segura2005,Scalo2007}？其中包括对距离我
+们最近的行星系统 Proxima Centauri b 的主星、伴星、行星性质以及其间的空间天气环境对宜居性的讨
+论（参见 \citen{AngladaEscude2016} 以及其引用文献）。
 
 而为了得到更精确的行星内部结构，未来则可通过分析太阳系内气巨星以及类地行星的深层内部结构
 以及 USPs 或者 HJs 来了解其它行星的性质。此外系外生命的存在信号（即系外生物信号，
