@@ -797,6 +797,8 @@
   \renewcommand{\njut@value@nlc@reviewerc}{#1}}
 \newcommand*{\reviewerd}[1]{%
   \renewcommand{\njut@value@nlc@reviewerd}{#1}}
+\newcommand*{\reviewere}[1]{%
+  \renewcommand{\njut@value@nlc@reviewere}{#1}}
 \newcommand*{\nlcdate}[1]{%
   \renewcommand{\njut@value@nlc@date}{#1}}
 \renewcommand*{\title}[1]{%
@@ -906,6 +908,7 @@
     \noindent\hfill\njutunderline[9em]{\njut@value@nlc@reviewerb}\par
     \noindent\hfill\njutunderline[9em]{\njut@value@nlc@reviewerc}\par
     \noindent\hfill\njutunderline[9em]{\njut@value@nlc@reviewerd}\par
+    \noindent\hfill\njutunderline[9em]{\njut@value@nlc@reviewere}\par
   }
   \cleardoublepage
 }
